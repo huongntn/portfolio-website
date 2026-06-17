@@ -253,56 +253,35 @@
       color: var(--text-main);
     }
 
-    /* 5. Legal & Minimalist Dark Footer Layout Updates */
+    /* 5. Mobile-Optimized Footer Layout */
     footer {
       background-color: var(--text-main);
       color: var(--white);
-      padding: 5rem 0;
+      padding: 4rem 0; /* Slightly tighter top/bottom padding for small displays */
       margin-top: 5rem;
     }
 
     .footer-wrapper {
       display: flex;
       flex-direction: column;
-      gap: 2.5rem;
+      gap: 2rem;
     }
 
     @media (min-width: 768px) {
       .footer-wrapper {
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end; /* Aligns columns on desktop */
+        gap: 2.5rem;
       }
     }
 
-    .footer-brand h5 {
-      font-family: var(--font-headers);
-      font-weight: 800;
-      font-size: 1.1rem;
-      margin: 0 0 0.4rem 0;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .footer-brand p {
-      margin: 0;
-      font-size: 0.9rem;
-      color: var(--text-light);
-    }
-
-    /* Container holding text links and icons alignment */
-    .footer-nav-group {
+    /* Left side identity stack controls */
+    .footer-identity-group {
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
+      gap: 1rem; 
       align-items: flex-start;
-    }
-
-    @media (min-width: 768px) {
-      .footer-nav-group {
-        align-items: flex-end;
-        gap: 1rem;
-      }
     }
 
     .social-icons {
@@ -320,6 +299,50 @@
       color: var(--brand-orange);
     }
 
+    .footer-brand h5 {
+      font-family: var(--font-headers);
+      font-weight: 800;
+      font-size: 1.05rem;
+      margin: 0 0 0.4rem 0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .footer-brand p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+
+    /* Right side legal link alignment controls */
+    .footer-nav-group {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    @media (min-width: 768px) {
+      .footer-nav-group {
+        align-items: flex-end;
+      }
+    }
+
+    /* Mobile: flows cleanly in a side-by-side row; Desktop: stacks into a column */
+    .legal-nav {
+      display: flex;
+      flex-direction: row; 
+      gap: 1.5rem;
+      align-items: center;
+      flex-wrap: wrap; /* Safe wrapping if screens get extremely small */
+    }
+
+    @media (min-width: 768px) {
+      .legal-nav {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: flex-end;
+      }
+    }
+
     .legal-nav a {
       color: var(--white);
       text-decoration: none;
@@ -328,14 +351,7 @@
       font-size: 0.8rem;
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      margin-right: 1.5rem;
-    }
-
-    @media (min-width: 768px) {
-      .legal-nav a {
-        margin-right: 0;
-        margin-left: 1.5rem;
-      }
+      transition: color 0.15s ease;
     }
 
     .legal-nav a:hover {
@@ -365,7 +381,7 @@
         <h1>Hi, I’m Huong</h1>
         <p>I am a Software Engineer built in the world of SAP consulting. I specialize in breaking down chaotic corporate workflows into clean, unyielding backend system logic. I cut through modern tech bloat to build deterministic infrastructure, high-integrity data architectures, and software setups that run predictably at enterprise scale.</p>
         
-        <!-- Premium Action Buttons -->
+        <!-- Action Buttons -->
         <div class="cta-group">
           <a href="https://www.linkedin.com/in/nguyen-huong" class="btn-dark" target="_blank" rel="noopener">Connect on LinkedIn</a>
           <a href="https://github.com/huongntn" class="btn-dark" target="_blank" rel="noopener">Explore Codebase</a>
@@ -411,15 +427,12 @@
 
   </main>
 
-  <!-- Modern Dark Footer with Embedded Social Icons -->
+  <!-- Mobile-Responsive Left-Aligned Identity Footer Area -->
   <footer>
     <div class="container footer-wrapper">
-      <div class="footer-brand">
-        <p>&copy; 2026 Thi Ngoc Huong Nguyen</p>
-      </div>
       
-      <div class="footer-nav-group">
-        <!-- Social Vector Icons Row (Fill with exact profile URL paths) -->
+      <!-- Left Column: Icons stacked beautifully above brand info -->
+      <div class="footer-identity-group">
         <div class="social-icons">
           <a href="https://github.com/huongntn" target="_blank" rel="noopener" aria-label="GitHub Profile">
             <i class="fa-brands fa-github"></i>
@@ -428,13 +441,19 @@
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
         </div>
-        
-        <!-- Legal Links Navigation -->
+        <div class="footer-brand">
+          <p>&copy; 2026 Thi Ngoc Huong Nguyen</p>
+        </div>
+      </div>
+      
+      <!-- Right Column: Legal Navigation Row (Mobile-Friendly) -->
+      <div class="footer-nav-group">
         <nav class="legal-nav">
           <a href="/impress">Imprint</a>
           <a href="privacy.html">Privacy Policy</a>
         </nav>
       </div>
+      
     </div>
   </footer>
 
