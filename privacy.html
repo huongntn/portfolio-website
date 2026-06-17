@@ -66,7 +66,11 @@
       text-decoration: none;
       text-transform: uppercase;
       letter-spacing: -1.5px;
-      box-shadow: none !important; /* Explicitly strip underlines from logo */
+      box-shadow: none !important; /* Strips underlines */
+    }
+
+    .logo:hover {
+      color: var(--text-main); /* Disables orange hover shade on logo to match index.html */
     }
 
     .nav-links a {
@@ -78,7 +82,7 @@
       font-size: 0.85rem;
       margin-left: 1.75rem;
       letter-spacing: 0.5px;
-      box-shadow: none !important; /* Explicitly strip underlines from nav menu */
+      box-shadow: none !important; /* Strips underlines */
     }
 
     .nav-links a:hover {
