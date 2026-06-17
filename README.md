@@ -23,8 +23,11 @@ The project follows a clean, decoupled architecture to separate content, legal f
 ```text
 portfolio-website/
 ├── css/
-│   └── styles.css        # Central stylesheet & layout designs
-├── pages/
-│   └── privacy.html      # GDPR-compliant English Privacy Policy
-├── index.html            # Core homepage & professional engineering resume
-└── README.md             # Project documentation (this file)
+│   └── styles.css        # One central stylesheet for your entire website
+├── blogs/
+│   ├── index.html        # Your Blog Feed page (nguyen-huong.com/blogs)
+│   ├── clean-code.html   # Individual blog post article
+│   └── edge-hosting.html # Individual blog post article
+├── index.html            # The Core Hub (Hero, Skills, Projects, About, Contact)
+├── privacy.html          # GDPR Privacy Policy
+└── README.md             # Your professional repository documentation
