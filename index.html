@@ -1,231 +1,303 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thi Ngoc Huong Nguyen | Software Engineer Portfolio</title>
-  <meta name="description" content="Professional portfolio and technical blog of Thi Ngoc Huong Nguyen, Software Engineer.">
+  <title>Thi Ngoc Huong Nguyen | Engineering & Web Architecture</title>
+  <meta name="description" content="Software engineer building deterministic backend pipelines and minimal, text-first web environments.">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <!-- Google Fonts loaded securely -->
+  
+  <!-- Manson's exact typography pairing: Montserrat (Punchy Headers) & Source Serif Pro (Elegant Copy) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Link to your central stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
   
   <style>
-    /* Inline base variables to guarantee beautiful design before your styles.css finishes loading */
     :root {
-      --primary: #2563eb;
-      --text: #1f2937;
-      --text-muted: #4b5563;
-      --bg: #f9fafb;
-      --card-bg: #ffffff;
-      --border: #e5e7eb;
+      --background-body: #f5f5f5;
+      --text-main: #252121;
+      --text-light: #747f80;
+      --brand-orange: #f26822;
+      --white: #ffffff;
+      
+      --font-headers: 'Montserrat', sans-serif;
+      --font-body: 'Source Serif Pro', serif;
     }
-    body {
-      font-family: 'Inter', sans-serif;
-      color: var(--text);
-      background-color: var(--bg);
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-col: column;
-      min-height: 100vh;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-      width: 100%;
+
+    * {
       box-sizing: border-box;
     }
-    header {
-      background: var(--card-bg);
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 50;
+
+    body {
+      background-color: var(--background-body);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      font-size: 1.15rem;
+      line-height: 1.65;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
     }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* 1. Header & Navigation Component */
+    header {
+      background-color: var(--background-body);
+      padding: 2rem 0;
+    }
+
     .nav-wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 4.5rem;
     }
+
     .logo {
-      font-family: 'Fira Code', monospace;
-      font-weight: 700;
-      font-size: 1.25rem;
-      color: var(--primary);
+      font-family: var(--font-headers);
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: var(--text-main);
       text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: -1.5px;
     }
+
     .nav-links a {
-      color: var(--text-muted);
+      font-family: var(--font-headers);
+      color: var(--text-main);
       text-decoration: none;
-      font-weight: 500;
-      margin-left: 1.5rem;
-      transition: color 0.2s;
-    }
-    .nav-links a:hover {
-      color: var(--primary);
-    }
-    .hero {
-      padding: 5rem 0;
-      text-align: left;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      margin: 0 0 1rem 0;
-      color: #111827;
       font-weight: 700;
-    }
-    .hero p {
-      font-size: 1.25rem;
-      color: var(--text-muted);
-      max-width: 600px;
-      line-height: 1.6;
-      margin: 0 0 2rem 0;
-    }
-    .btn {
-      background-color: var(--primary);
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 0.375rem;
-      text-decoration: none;
-      font-weight: 500;
-      display: inline-block;
-      transition: opacity 0.2s;
-    }
-    .btn:hover {
-      opacity: 0.9;
-    }
-    .section-title {
-      font-size: 1.75rem;
-      margin-bottom: 2rem;
-      position: relative;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 4rem;
-    }
-    .card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 0.5rem;
-      padding: 1.5rem;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    }
-    .card h3 {
-      margin: 0 0 0.5rem 0;
-      font-size: 1.25rem;
-    }
-    .card p {
-      color: var(--text-muted);
-      line-height: 1.5;
-      margin: 0 0 1rem 0;
-    }
-    .tag {
-      font-family: 'Fira Code', monospace;
+      text-transform: uppercase;
       font-size: 0.85rem;
-      background: #eff6ff;
-      color: var(--primary);
-      padding: 0.25rem 0.5rem;
-      border-radius: 0.25rem;
-      margin-right: 0.5rem;
+      margin-left: 1.75rem;
+      letter-spacing: 0.5px;
     }
+
+    .nav-links a:hover {
+      color: var(--brand-orange);
+    }
+
+    /* 2. Hero Component (Bold, Unapologetic Statement) */
+    .hero {
+      padding: 6rem 0 5rem 0;
+    }
+
+    h1 {
+      font-family: var(--font-headers);
+      font-weight: 800;
+      font-size: 2.75rem;
+      line-height: 1.1;
+      margin: 0 0 1.5rem 0;
+      letter-spacing: -2px;
+    }
+
+    @media (min-width: 680px) {
+      h1 { font-size: 4.5rem; }
+    }
+
+    .hero p {
+      font-size: 1.35rem;
+      max-width: 750px;
+      margin: 0;
+      color: var(--text-main);
+    }
+
+    /* 3. Section & Separator Rules */
+    section {
+      padding: 4rem 0;
+    }
+
+    h2 {
+      font-family: var(--font-headers);
+      font-size: 1.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+      margin: 0 0 2.5rem 0;
+    }
+
+    @media (min-width: 680px) {
+      h2 { font-size: 2.25rem; }
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--text-main);
+      margin: 0;
+    }
+
+    /* 4. Minimalist Dynamic Article Directory Feed */
+    .article-feed {
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+    }
+
+    .article-item {
+      max-width: 780px;
+    }
+
+    .article-tag {
+      font-family: var(--font-headers);
+      font-size: 0.8rem;
+      color: var(--brand-orange);
+      text-transform: uppercase;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    .article-item h3 {
+      font-family: var(--font-headers);
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin: 0 0 0.85rem 0;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+    }
+
+    @media (min-width: 680px) {
+      .article-item h3 { font-size: 2rem; }
+    }
+
+    .article-item h3 a {
+      color: var(--text-main);
+      text-decoration: none;
+      box-shadow: inset 0 -2px 0 var(--text-light);
+      transition: box-shadow 0.15s, color 0.15s;
+    }
+
+    .article-item h3 a:hover {
+      color: var(--brand-orange);
+      box-shadow: inset 0 -2px 0 var(--brand-orange);
+    }
+
+    .article-item p {
+      margin: 0;
+      color: var(--text-main);
+    }
+
+    /* 5. Legal & Minimalist Dark Footer */
     footer {
-      background: var(--card-bg);
-      border-t: 1px solid var(--border);
-      padding: 2rem 0;
-      margin-top: auto;
+      background-color: var(--text-main);
+      color: var(--white);
+      padding: 5rem 0;
+      margin-top: 5rem;
     }
+
     .footer-wrapper {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      gap: 1rem;
+      gap: 2.5rem;
     }
-    @media (min-width: 768px) {
+
+    @media (min-width: 680px) {
       .footer-wrapper {
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
       }
     }
-    .legal-nav a {
-      color: var(--text-muted);
-      text-decoration: none;
-      margin-left: 1rem;
-      font-size: 0.9rem;
+
+    .footer-brand h5 {
+      font-family: var(--font-headers);
+      font-size: 1.1rem;
+      margin: 0 0 0.4rem 0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
+
+    .footer-brand p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+
+    .legal-nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-family: var(--font-headers);
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      margin-left: 1.5rem;
+      letter-spacing: 0.5px;
+    }
+
     .legal-nav a:hover {
-      color: var(--primary);
+      color: var(--brand-orange);
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation -->
   <header>
     <div class="container nav-wrapper">
       <a href="/" class="logo">Huong.Dev</a>
       <nav class="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="privacy.html">Privacy</a>
+        <a href="#work">Work</a>
+        <a href="#methodology">About</a>
+        <a href="/blogs/">Blogs</a>
       </nav>
     </div>
   </header>
 
-  <!-- Main Content Layout Area -->
   <main class="container">
     
-    <!-- Hero Introduction Section -->
-    <section class="hero">
-      <h1>Hi, I'm Thi Ngoc Huong Nguyen</h1>
-      <p>I am a Software Engineer focused on building fast, reliable, and secure web architectures. Welcome to my clean deployment environment hosted on Cloudflare Pages.</p>
-      <a href="mailto:tnguyen20@stud.hs-heilbronn.de" class="btn">Get In Touch</a>
-    </section>
+    <!-- Hero Block -->
+    <div class="hero">
+      <h1>Engineering decisions that don't break.</h1>
+      <p>I am Thi Ngoc Huong Nguyen, a Software Engineer focusing on deterministic backend logic, strict database schemas, and lean frontend deployment pipelines hosted at the edge.</p>
+    </div>
 
-    <!-- Selected Engineering Projects Grid Section -->
-    <section id="projects">
-      <h2 class="section-title">Featured Work</h2>
-      <div class="grid">
+    <hr>
+
+    <!-- Project Case Work Directory (Chronological text feed) -->
+    <section id="work">
+      <h2>Selected Engineering Cases</h2>
+      <div class="article-feed">
         
-        <div class="card">
-          <h3>Supply Chain Data Analytics</h3>
-          <p>An automated analysis platform engine engineered to parse historical warehouse shipping metrics and pinpoint regional logic bottlenecks.</p>
-          <div>
-            <span class="tag">SQL</span>
-            <span class="tag">Python</span>
-          </div>
+        <div class="article-item">
+          <div class="article-tag">Data Infrastructure</div>
+          <h3><a href="https://github.com/huongntn" target="_blank" rel="noopener">Supply Chain Logistics Operations Processing Engine</a></h3>
+          <p>An automated backend analysis script engineered to ingest raw, unorganized historic logistics rows, formatting relational structures to identify transport bottlenecks.</p>
         </div>
 
-        <div class="card">
-          <h3>Decoupled Web Architecture</h3>
-          <p>A fast personal pipeline tracking tool optimized specifically for lightweight web asset loading profiles and high security edge hosting configurations.</p>
-          <div>
-            <span class="tag">HTML5</span>
-            <span class="tag">Tailwind</span>
-          </div>
+        <div class="article-item">
+          <div class="article-tag">Web Systems</div>
+          <h3><a href="https://github.com/huongntn" target="_blank" rel="noopener">Decoupled Architecture Blueprint</a></h3>
+          <p>A production environment designed entirely to avoid heavy layout bloat and minimize network asset footprints, optimized for Cloudflare distribution pipelines.</p>
         </div>
 
       </div>
     </section>
 
+    <hr>
+
+    <!-- Narrative Section (About Me Block) -->
+    <section id="methodology">
+      <h2>The Methodology</h2>
+      <div class="article-item" style="font-size: 1.25rem;">
+        <p style="margin-bottom: 1.5rem;">Web frameworks shouldn't be overbuilt placeholders for bad planning. Code is elegant when there is no unnecessary noise left to strip out. I aim for minimal asset weight, relational databases that protect integrity, and predictable deployments.</p>
+        <p>Operating from Heilbronn, Germany, I combine programmatic architectures with clean, system-level efficiency metrics.</p>
+      </div>
+    </section>
+
   </main>
 
-  <!-- Legal & Brand Footer Section Area -->
+  <!-- Solid Blackout Footer Area -->
   <footer>
     <div class="container footer-wrapper">
-      <div>
-        &copy; 2026 Thi Ngoc Huong Nguyen. Built with precision.
+      <div class="footer-brand">
+        <h5>Thi Ngoc Huong Nguyen</h5>
+        <p>&copy; 2026. Stripped down to essential functions.</p>
       </div>
       <nav class="legal-nav">
         <a href="/impress">Imprint</a>
