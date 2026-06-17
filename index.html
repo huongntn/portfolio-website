@@ -7,7 +7,6 @@
   <meta name="description" content="Software engineer building deterministic backend pipelines and minimal, text-first web environments.">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   
-  <!-- Headers -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -20,6 +19,7 @@
       --text-light: #747f80;
       --brand-orange: #f26822;
       --white: #ffffff;
+      --menu-sand: #eaddd7;
       
       --font-headers: 'Montserrat', sans-serif;
       --font-body: 'Source Serif Pro', serif;
@@ -46,9 +46,9 @@
       padding: 0 1.5rem;
     }
 
-    /* 1. Header & Navigation Component */
+    /* 1. Navigation */
     header {
-      background-color: #eaddd7; 
+      background-color: var(--menu-sand); 
       border-bottom: 1px solid var(--text-main); 
       padding: 2rem 0;
     }
@@ -85,33 +85,102 @@
     }
 
     /* 2. Hero Component */
-    .hero {
-      padding: 6rem 0 5rem 0;
+    .hero-wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 2.5rem;
+      padding: 4rem 0;
+      align-items: center;
     }
 
+    @media (min-width: 768px) {
+      .hero-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3.5rem;
+        padding: 7rem 0 6rem 0;
+      }
+    }
+
+    .hero-text {
+      flex: 1.2;
+    }
+
+    /* Profile photo */
+    .hero-profile {
+      flex-shrink: 0;
+      width: 280px;
+      height: 280px;
+      position: relative;
+    }
+
+    @media (min-width: 768px) {
+      .hero-profile {
+        width: 360px;
+        height: 360px;
+      }
+    }
+
+    .profile-circle {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: var(--menu-sand);
+      object-fit: cover;
+      object-position: center 15%; 
+      display: block;
+    }
+
+    /* Typography */
     h1 {
       font-family: var(--font-headers);
       font-weight: 800;
       font-size: 2.75rem;
-      line-height: 1.1;
-      margin: 0 0 1.5rem 0;
-      letter-spacing: -2px;
+      line-height: 1.05;
+      margin: 0 0 1.75rem 0;
+      letter-spacing: -1.5px;
     }
 
-    @media (min-width: 680px) {
-      h1 { font-size: 4.5rem; }
+    @media (min-width: 768px) {
+      h1 { font-size: 4rem; }
     }
 
-    .hero p {
-      font-size: 1.35rem;
-      max-width: 750px;
-      margin: 0;
+    .hero-text p {
+      font-size: 1.3rem;
+      line-height: 1.6;
+      margin: 0 0 2rem 0;
       color: var(--text-main);
     }
 
-    /* 3. Section & Separator Rules */
+    /* Call to Action Button Row */
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .btn-dark {
+      font-family: var(--font-headers);
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--white);
+      background-color: var(--text-main);
+      text-decoration: none;
+      padding: 0.95rem 1.75rem;
+      border-radius: 30px;
+      transition: background-color 0.15s ease;
+    }
+
+    .btn-dark:hover {
+      background-color: var(--brand-orange);
+    }
+
+    /* 3. Global Structural Break Rules */
     section {
-      padding: 4rem 0;
+      padding: 4.5rem 0;
     }
 
     h2 {
@@ -133,7 +202,7 @@
       margin: 0;
     }
 
-    /* 4. Minimalist Dynamic Article Directory Feed */
+    /* 4. Directory Logs / Articles */
     .article-feed {
       display: flex;
       flex-direction: column;
@@ -184,7 +253,7 @@
       color: var(--text-main);
     }
 
-    /* 5. Legal & Minimalist Dark Footer */
+    /* 5. Minimalist Footer */
     footer {
       background-color: var(--text-main);
       color: var(--white);
@@ -208,6 +277,7 @@
 
     .footer-brand h5 {
       font-family: var(--font-headers);
+      font-weight: 700;
       font-size: 1.1rem;
       margin: 0 0 0.4rem 0;
       text-transform: uppercase;
@@ -238,7 +308,6 @@
 </head>
 <body>
 
-  <!-- Navigation -->
   <header>
     <div class="container nav-wrapper">
       <a href="/" class="logo">Huong Nguyen</a>
@@ -252,60 +321,15 @@
 
   <main class="container">
     
-    <!-- Hero Block -->
-    <div class="hero">
-      <h1>Enterprise logic, stripped of the hype</h1>
-      <p>I am Huong, a Software Engineer. My career path is built in SAP consulting, translating complex enterprise workflows into reliable, airtight system logic. I cut through the tech bloat to focus on high-integrity data design, predictable architecture, and business infrastructure that actually scales.</p>
-    </div>
-
-    <hr>
-
-    <!-- Project Case Work Directory -->
-    <section id="work">
-      <h2>Selected Engineering Cases</h2>
-      <div class="article-feed">
+    <div class="hero-wrapper">
+      <div class="hero-text">
+        <h1>Hi, I’m Huong</h1>
+        <p>I am a Software Engineer built in the high-stakes world of SAP consulting. I specialize in dissecting messy, chaotic corporate workflows and rebuilding them into ruthless, unyielding backend logic. I don't build over-hyped tech bloat—I design predictable infrastructure, rock-solid data pipelines, and systems that run flawlessly at massive enterprise scale.</p>
         
-        <div class="article-item">
-          <div class="article-tag">Data Infrastructure</div>
-          <h3><a href="https://github.com/huongntn" target="_blank" rel="noopener">Supply Chain Logistics Operations Processing Engine</a></h3>
-          <p>An automated backend analysis script engineered to ingest raw, unorganized historic logistics rows, formatting relational structures to identify transport bottlenecks.</p>
+        <div class="cta-group">
+          <a href="#work" class="btn-dark">Review My Cases</a>
+          <a href="https://github.com/huongntn" class="btn-dark" target="_blank" rel="noopener">Explore Codebase</a>
         </div>
-
-        <div class="article-item">
-          <div class="article-tag">Web Systems</div>
-          <h3><a href="https://github.com/huongntn" target="_blank" rel="noopener">Decoupled Architecture Blueprint</a></h3>
-          <p>A production environment designed entirely to avoid heavy layout bloat and minimize network asset footprints, optimized for Cloudflare distribution pipelines.</p>
-        </div>
-
       </div>
-    </section>
-
-    <hr>
-
-    <!-- Narrative Section (About Me Block) -->
-    <section id="strategy">
-      <h2>The Strategy</h2>
-      <div class="article-item" style="font-size: 1.25rem;">
-        <p style="margin-bottom: 1.5rem;">Enterprise systems shouldn't rely on fragile layers or overcomplicated workarounds. True efficiency happens when messy corporate workflows are broken down into clean, unyielding database logic. I believe software should serve the business model directly, not the other way around.</p>
-        <p>Operating from Heilbronn, Germany, I bridge the gap between abstract corporate requirements and deterministic engineering, ensuring that massive backend environments remain predictable, secure, and easy to maintain.</p>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Solid Blackout Footer Area -->
-  <footer>
-    <div class="container footer-wrapper">
-      <div class="footer-brand">
-        <h5>Thi Ngoc Huong Nguyen</h5>
-        <p>&copy; 2026. Engineered to work, not to impress.</p>
-      </div>
-      <nav class="legal-nav">
-        <a href="/impress">Imprint</a>
-        <a href="privacy.html">Privacy Policy</a>
-      </nav>
-    </div>
-  </footer>
-
-</body>
-</html>
+      
+      <div class="hero-profile">
