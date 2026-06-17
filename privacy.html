@@ -66,6 +66,7 @@
       text-decoration: none;
       text-transform: uppercase;
       letter-spacing: -1.5px;
+      box-shadow: none !important; /* Explicitly strip underlines from logo */
     }
 
     .nav-links a {
@@ -77,6 +78,7 @@
       font-size: 0.85rem;
       margin-left: 1.75rem;
       letter-spacing: 0.5px;
+      box-shadow: none !important; /* Explicitly strip underlines from nav menu */
     }
 
     .nav-links a:hover {
@@ -143,17 +145,11 @@
       margin-bottom: 0.5rem;
     }
 
+    /* Normal text layout for address parameters without boxes */
     .address-block {
-      background: var(--white);
-      border: 1px solid var(--text-main);
-      padding: 1.5rem;
       font-style: normal;
-      display: inline-block;
+      display: block;
       margin: 1rem 0 2rem 0;
-    }
-
-    .address-block a {
-      box-shadow: none;
     }
 
     a {
@@ -219,7 +215,7 @@
       text-transform: uppercase;
       margin-left: 1.5rem;
       letter-spacing: 0.5px;
-      box-shadow: none;
+      box-shadow: none !important;
     }
 
     .legal-nav a:hover {
@@ -284,7 +280,7 @@
       <h2>3. Information on the Responsible Party</h2>
       <p>The data controller responsible for processing data on this website is:</p>
       <div class="address-block">
-        <strong>Thi Ngoc Huong Nguyen</strong><br>
+        Thi Ngoc Huong Nguyen<br>
         Max-Planck-Straße 39<br>
         74081 Heilbronn<br>
         Germany<br><br>
