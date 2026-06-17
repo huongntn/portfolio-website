@@ -1,165 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy | Thi Ngoc Huong Nguyen</title>
-  <meta name="description" content="Privacy Policy of Thi Ngoc Huong Nguyen portfolio website.">
+  <title>Privacy Policy | Huong Nguyen</title>
+  <meta name="robots" content="noindex, follow">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <!-- Google Fonts loaded securely -->
+  
+  <!-- Manson's typography pairing: Montserrat & Source Serif Pro -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Link to your central stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght=700;800&family=Source+Serif+Pro:ital,wght=0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
   
   <style>
     :root {
-      --primary: #2563eb;
-      --text: #1f2937;
-      --text-muted: #4b5563;
-      --bg: #f9fafb;
-      --card-bg: #ffffff;
-      --border: #e5e7eb;
+      --background-body: #f5f5f5;
+      --text-main: #252121;
+      --text-light: #747f80;
+      --brand-orange: #f26822;
+      --white: #ffffff;
+      
+      --font-headers: 'Montserrat', sans-serif;
+      --font-body: 'Source Serif Pro', serif;
     }
-    body {
-      font-family: 'Inter', sans-serif;
-      color: var(--text);
-      background-color: var(--bg);
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-      width: 100%;
+
+    * {
       box-sizing: border-box;
     }
-    header {
-      background: var(--card-bg);
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 50;
+
+    body {
+      background-color: var(--background-body);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      font-size: 1.15rem;
+      line-height: 1.65;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
     }
+
+    .container {
+      max-width: 800px; /* Slimmer layout optimized for long-form editorial reading */
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Header & Navigation */
+    header {
+      background-color: var(--background-body);
+      padding: 2rem 0;
+    }
+
     .nav-wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 4.5rem;
-      max-width: 1000px;
     }
+
     .logo {
-      font-family: 'Fira Code', monospace;
-      font-weight: 700;
-      font-size: 1.25rem;
-      color: var(--primary);
-      text-decoration: none;
-    }
-    .nav-links a {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-weight: 500;
-      margin-left: 1.5rem;
-      transition: color 0.2s;
-    }
-    .nav-links a:hover {
-      color: var(--primary);
-    }
-    .content-wrapper {
-      padding: 4rem 0;
-      line-height: 1.7;
-    }
-    h1 {
-      font-size: 2.5rem;
-      color: #111827;
-      margin-bottom: 2rem;
-    }
-    h2 {
+      font-family: var(--font-headers);
+      font-weight: 800;
       font-size: 1.5rem;
-      color: #111827;
-      margin-top: 2.5rem;
-      margin-bottom: 1rem;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 0.5rem;
+      color: var(--text-main);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: -1.5px;
     }
+
+    .nav-links a {
+      font-family: var(--font-headers);
+      color: var(--text-main);
+      text-decoration: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      margin-left: 1.75rem;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-links a:hover {
+      color: var(--brand-orange);
+    }
+
+    /* Content Area */
+    .legal-content {
+      padding: 5rem 0;
+    }
+
+    h1 {
+      font-family: var(--font-headers);
+      font-weight: 800;
+      font-size: 2.75rem;
+      line-height: 1.1;
+      margin: 0 0 1rem 0;
+      letter-spacing: -2px;
+      text-transform: uppercase;
+    }
+
+    @media (min-width: 680px) {
+      h1 { font-size: 4rem; }
+    }
+
+    .last-updated {
+      font-family: var(--font-headers);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      color: var(--brand-orange);
+      font-weight: 800;
+      margin-bottom: 4rem;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      font-family: var(--font-headers);
+      font-size: 1.5rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.5px;
+      margin: 3.5rem 0 1.5rem 0;
+    }
+
     h3 {
-      font-size: 1.2rem;
-      color: #1f2937;
-      margin-top: 1.5rem;
+      font-family: var(--font-headers);
+      font-size: 1.15rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 2rem 0 1rem 0;
     }
-    p, ul {
-      color: var(--text-muted);
-      margin-bottom: 1.25rem;
+
+    p {
+      margin: 0 0 1.5rem 0;
     }
+
     ul {
-      padding-left: 1.25rem;
+      margin: 0 0 2rem 0;
+      padding-left: 1.5rem;
     }
+
     li {
       margin-bottom: 0.5rem;
     }
-    .card-info {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 0.5rem;
+
+    .address-block {
+      background: var(--white);
+      border: 1px solid var(--text-main);
       padding: 1.5rem;
-      margin: 1.5rem 0;
+      font-style: normal;
+      display: inline-block;
+      margin-top: 0.5rem;
+      line-height: 1.5;
     }
+
+    a {
+      color: var(--text-main);
+      text-decoration: none;
+      box-shadow: inset 0 -1px 0 var(--text-light);
+    }
+
+    a:hover {
+      color: var(--brand-orange);
+      box-shadow: inset 0 -2px 0 var(--brand-orange);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--text-main);
+      margin: 4rem 0 0 0;
+    }
+
+    /* Footer */
     footer {
-      background: var(--card-bg);
-      border-top: 1px solid var(--border);
-      padding: 2rem 0;
-      margin-top: auto;
+      background-color: var(--text-main);
+      color: var(--white);
+      padding: 5rem 0;
     }
+
     .footer-wrapper {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-      max-width: 1000px;
+      gap: 2.5rem;
     }
-    @media (min-width: 768px) {
+
+    @media (min-width: 680px) {
       .footer-wrapper {
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
       }
     }
-    .legal-nav a {
-      color: var(--text-muted);
-      text-decoration: none;
-      margin-left: 1rem;
-      font-size: 0.9rem;
+
+    .footer-brand h5 {
+      font-family: var(--font-headers);
+      font-size: 1.1rem;
+      margin: 0 0 0.4rem 0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
+
+    .footer-brand p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+
+    .legal-nav a {
+      color: var(--white);
+      box-shadow: none;
+      font-family: var(--font-headers);
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      margin-left: 1.5rem;
+      letter-spacing: 0.5px;
+    }
+
     .legal-nav a:hover {
-      color: var(--primary);
+      color: var(--brand-orange);
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation -->
   <header>
     <div class="container nav-wrapper">
       <a href="/" class="logo">Huong.Dev</a>
       <nav class="nav-links">
-        <a href="/">Home</a>
-        <a href="privacy.html">Privacy</a>
+        <a href="/#work">Work</a>
+        <a href="/#strategy">About</a>
+        <a href="/blogs/">Blogs</a>
       </nav>
     </div>
   </header>
 
-  <!-- Legal Content -->
-  <main class="container content-wrapper">
+  <!-- Main Legal Content Segment -->
+  <main class="container legal-content">
     <h1>Privacy Policy</h1>
-    
+    <div class="last-updated">Last updated: June 2026</div>
+
+    <!-- 1. Privacy at a Glance -->
     <h2>1. Privacy at a Glance</h2>
     <h3>General Information</h3>
     <p>The following notes provide a simple overview of what happens to your personal data when you visit this website. Personal data is any data with which you can be personally identified.</p>
-
+    
     <h3>Data Collection on This Website</h3>
     <p><strong>Who is responsible for the data collection on this website?</strong><br>
     The data processing on this website is carried out by the website operator. You can find their contact details in the section "Information on the Responsible Party" below.</p>
@@ -167,26 +251,29 @@
     <p><strong>How do we collect your data?</strong><br>
     Your data is collected on one hand when you provide it to us. This could, for example, be technical telemetry tracking details automatically captured by computer software configurations or message notes sent directly via professional networking integrations.</p>
 
+    <!-- 2. Hosting by Cloudflare -->
     <h2>2. Hosting by Cloudflare</h2>
     <p>We host the content of our website with the following infrastructure provider:</p>
-    <div class="card-info">
+    <p>
       <strong>Cloudflare, Inc.</strong><br>
       101 Townsend St<br>
       San Francisco, CA 94107<br>
       USA
-    </div>
+    </p>
     <p>External cloud hosting is utilized for the fast and secure delivery of our online engineering presence. Cloudflare automatically handles network transport security and system logging data (such as temporary IP request records) to prevent security incidents and manage traffic loads efficiently under Art. 6 (1) lit. f GDPR.</p>
 
+    <!-- 3. Information on the Responsible Party -->
     <h2>3. Information on the Responsible Party</h2>
     <p>The data controller responsible for processing data on this website is:</p>
-    <div class="card-info">
+    <address class="address-block">
       <strong>Thi Ngoc Huong Nguyen</strong><br>
       Max-Planck-Straße 39<br>
       74081 Heilbronn<br>
       Germany<br><br>
-      Email: <a href="mailto:tnguyen20@stud.hs-heilbronn.de" style="color: var(--primary); text-decoration: none;">tnguyen20@stud.hs-heilbronn.de</a>
-    </div>
+      Email: <a href="mailto:tnguyen20@stud.hs-heilbronn.de">tnguyen20@stud.hs-heilbronn.de</a>
+    </address>
 
+    <!-- 4. Rights of the Data Subject -->
     <h2>4. Rights of the Data Subject</h2>
     <p>Under the statutory provisions of the General Data Protection Regulation (GDPR), you have the following rights regarding your personal data at any time:</p>
     <ul>
@@ -196,22 +283,26 @@
       <li>Right to data portability (Art. 20 GDPR)</li>
       <li>Right to object to processing configurations (Art. 21 GDPR)</li>
     </ul>
-    <p>You also have the right to lodge a official complaint with a competent data protection supervisory authority regarding the processing layouts used on this domain.</p>
+    <p>You also have the right to lodge an official complaint with a competent data protection supervisory authority regarding the processing layouts used on this domain.</p>
 
+    <!-- 5. Plugins and Tools -->
     <h2>5. Plugins and Tools</h2>
     <h3>Google Fonts (Secure Web Delivery)</h3>
     <p>This site utilizes Google Fonts to keep design interfaces and typography completely unified. To maintain privacy standards, typography rules are served smoothly alongside your style parameters without storing cookies or capturing private tracking analytics profiles.</p>
+
+    <hr>
   </main>
 
-  <!-- Footer Section -->
+  <!-- Solid Blackout Footer Area -->
   <footer>
     <div class="container footer-wrapper">
-      <div>
-        &copy; 2026 Thi Ngoc Huong Nguyen. Built with precision.
+      <div class="footer-brand">
+        <h5>Thi Ngoc Huong Nguyen</h5>
+        <p>&copy; 2026. Engineered to work, not to impress.</p>
       </div>
       <nav class="legal-nav">
+        <a href="/">Home</a>
         <a href="/impress">Imprint</a>
-        <a href="privacy.html">Privacy Policy</a>
       </nav>
     </div>
   </footer>
