@@ -1,0 +1,1 @@
+import{b as s}from"./dateUtils.PMr0ZFgl.js";class r extends HTMLElement{connectedCallback(){const e=this.dataset.start;if(!e)return;const t=this.querySelector("p");t&&(t.textContent=s(e))}}customElements.get("skill-tracker")||customElements.define("skill-tracker",r);

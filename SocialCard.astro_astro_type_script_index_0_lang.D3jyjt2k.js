@@ -1,0 +1,1 @@
+import{c as s}from"./dateUtils.PMr0ZFgl.js";class a extends HTMLElement{connectedCallback(){const t=this.dataset.start;if(t){const e=this.querySelector(".created-at");e&&(e.textContent=s(t))}}}customElements.get("social-tracker")||customElements.define("social-tracker",a);
