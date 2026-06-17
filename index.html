@@ -11,6 +11,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons for Footer Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
   <link rel="stylesheet" href="/css/styles.css">
   
   <style>
@@ -149,7 +153,7 @@
       color: var(--text-main);
     }
 
-    /* New Button styles kept exactly from your preferences */
+    /* Buttons block styles */
     .cta-group {
       display: flex;
       flex-wrap: wrap;
@@ -249,7 +253,7 @@
       color: var(--text-main);
     }
 
-    /* 5. Legal & Minimalist Dark Footer */
+    /* 5. Legal & Minimalist Dark Footer Layout Updates */
     footer {
       background-color: var(--text-main);
       color: var(--white);
@@ -263,7 +267,7 @@
       gap: 2.5rem;
     }
 
-    @media (min-width: 680px) {
+    @media (min-width: 768px) {
       .footer-wrapper {
         flex-direction: row;
         justify-content: space-between;
@@ -286,6 +290,36 @@
       color: var(--text-light);
     }
 
+    /* Container holding text links and icons alignment */
+    .footer-nav-group {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+
+    @media (min-width: 768px) {
+      .footer-nav-group {
+        align-items: flex-end;
+        gap: 1rem;
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .social-icons a {
+      color: var(--white);
+      font-size: 1.35rem;
+      transition: color 0.15s ease;
+    }
+
+    .social-icons a:hover {
+      color: var(--brand-orange);
+    }
+
     .legal-nav a {
       color: var(--white);
       text-decoration: none;
@@ -293,8 +327,15 @@
       font-weight: 700;
       font-size: 0.8rem;
       text-transform: uppercase;
-      margin-left: 1.5rem;
       letter-spacing: 0.5px;
+      margin-right: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .legal-nav a {
+        margin-right: 0;
+        margin-left: 1.5rem;
+      }
     }
 
     .legal-nav a:hover {
@@ -324,14 +365,13 @@
         <h1>Hi, I’m Huong</h1>
         <p>I am a Software Engineer built in the world of SAP consulting. I specialize in breaking down chaotic corporate workflows into clean, unyielding backend system logic. I cut through modern tech bloat to build deterministic infrastructure, high-integrity data architectures, and software setups that run predictably at enterprise scale.</p>
         
-        <!-- Reinstated Buttons group -->
+        <!-- Premium Action Buttons -->
         <div class="cta-group">
-          <a href="#work" class="btn-dark">Review My Cases</a>
+          <a href="https://www.linkedin.com/in/nguyen-huong" class="btn-dark" target="_blank" rel="noopener">Connect on LinkedIn</a>
           <a href="https://github.com/huongntn" class="btn-dark" target="_blank" rel="noopener">Explore Codebase</a>
         </div>
       </div>
       <div class="hero-profile">
-        <!-- Photo is mapped exactly to your repo directory path right next to text -->
         <img src="assets/profile_photo.png" alt="Huong Nguyen" class="profile-circle">
       </div>
     </div>
@@ -371,17 +411,30 @@
 
   </main>
 
-  <!-- Solid Blackout Footer Area Reinstated With Copyright, Imprint, and Privacy Policy -->
+  <!-- Modern Dark Footer with Embedded Social Icons -->
   <footer>
     <div class="container footer-wrapper">
       <div class="footer-brand">
-        <h5>Thi Ngoc Huong Nguyen</h5>
-        <p>&copy; 2026. Engineered to work, not to impress.</p>
+        <p>&copy; 2026 Thi Ngoc Huong Nguyen</p>
       </div>
-      <nav class="legal-nav">
-        <a href="/impress">Imprint</a>
-        <a href="privacy.html">Privacy Policy</a>
-      </nav>
+      
+      <div class="footer-nav-group">
+        <!-- Social Vector Icons Row (Fill with exact profile URL paths) -->
+        <div class="social-icons">
+          <a href="https://github.com/huongntn" target="_blank" rel="noopener" aria-label="GitHub Profile">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/nguyen-huong" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+        
+        <!-- Legal Links Navigation -->
+        <nav class="legal-nav">
+          <a href="/impress">Imprint</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </nav>
+      </div>
     </div>
   </footer>
 
