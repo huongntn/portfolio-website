@@ -7,12 +7,10 @@
   <meta name="description" content="Software engineer building deterministic backend pipelines and minimal, text-first web environments.">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   
-  <!-- Headers -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   
-  <!-- Font Awesome Icons for Footer Links -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   
   <link rel="stylesheet" href="/css/styles.css">
@@ -110,6 +108,7 @@
 
     .hero-text {
       flex: 1;
+      width: 100%;
     }
 
     .hero-profile {
@@ -153,11 +152,19 @@
       color: var(--text-main);
     }
 
-    /* Buttons block styles */
+    /* Symmetrical Button group styles */
     .cta-group {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       gap: 1rem;
+      width: 100%;
+    }
+
+    @media (min-width: 480px) {
+      .cta-group {
+        flex-direction: row;
+        align-items: center;
+      }
     }
 
     .btn-dark {
@@ -169,9 +176,18 @@
       color: var(--white);
       background-color: var(--text-main);
       text-decoration: none;
-      padding: 0.95rem 1.75rem;
+      padding: 0.95rem 1.5rem;
       border-radius: 30px;
       transition: background-color 0.15s ease;
+      text-align: center;
+      display: inline-block;
+    }
+
+    @media (min-width: 480px) {
+      .btn-dark {
+        flex: 1;
+        max-width: 240px;
+      }
     }
 
     .btn-dark:hover {
@@ -253,35 +269,28 @@
       color: var(--text-main);
     }
 
-    /* 5. Mobile-Optimized Footer Layout */
+    /* 5. Mobile-Optimized Footer Layout with Absolute Bottom Copyright */
     footer {
       background-color: var(--text-main);
       color: var(--white);
-      padding: 4rem 0; /* Slightly tighter top/bottom padding for small displays */
+      padding: 4rem 0 3rem 0;
       margin-top: 5rem;
     }
 
-    .footer-wrapper {
+    .footer-links-row {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
     }
 
     @media (min-width: 768px) {
-      .footer-wrapper {
+      .footer-links-row {
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-end; /* Aligns columns on desktop */
-        gap: 2.5rem;
+        align-items: center;
+        margin-bottom: 2.5rem;
       }
-    }
-
-    /* Left side identity stack controls */
-    .footer-identity-group {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem; 
-      align-items: flex-start;
     }
 
     .social-icons {
@@ -299,47 +308,17 @@
       color: var(--brand-orange);
     }
 
-    .footer-brand h5 {
-      font-family: var(--font-headers);
-      font-weight: 800;
-      font-size: 1.05rem;
-      margin: 0 0 0.4rem 0;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .footer-brand p {
-      margin: 0;
-      font-size: 0.85rem;
-      color: var(--text-light);
-    }
-
-    /* Right side legal link alignment controls */
-    .footer-nav-group {
-      display: flex;
-      align-items: flex-start;
-    }
-
-    @media (min-width: 768px) {
-      .footer-nav-group {
-        align-items: flex-end;
-      }
-    }
-
-    /* Mobile: flows cleanly in a side-by-side row; Desktop: stacks into a column */
     .legal-nav {
       display: flex;
       flex-direction: row; 
       gap: 1.5rem;
       align-items: center;
-      flex-wrap: wrap; /* Safe wrapping if screens get extremely small */
+      flex-wrap: wrap; 
     }
 
     @media (min-width: 768px) {
       .legal-nav {
-        flex-direction: column;
-        gap: 0.75rem;
-        align-items: flex-end;
+        gap: 1.5rem;
       }
     }
 
@@ -357,11 +336,31 @@
     .legal-nav a:hover {
       color: var(--brand-orange);
     }
+
+    /* Bottom Copyright Block */
+    .footer-bottom-brand {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 1.5rem;
+    }
+
+    .footer-bottom-brand h5 {
+      font-family: var(--font-headers);
+      font-weight: 800;
+      font-size: 1.05rem;
+      margin: 0 0 0.4rem 0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .footer-bottom-brand p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
   </style>
 </head>
 <body>
 
-  <!-- Navigation -->
   <header>
     <div class="container nav-wrapper">
       <a href="/" class="logo">Huong Nguyen</a>
@@ -375,13 +374,11 @@
 
   <main class="container">
     
-    <!-- Hero Block Split Layout -->
     <div class="hero-wrapper">
       <div class="hero-text">
         <h1>Hi, I’m Huong</h1>
         <p>I am a Software Engineer built in the world of SAP consulting. I specialize in breaking down chaotic corporate workflows into clean, unyielding backend system logic. I cut through modern tech bloat to build deterministic infrastructure, high-integrity data architectures, and software setups that run predictably at enterprise scale.</p>
         
-        <!-- Action Buttons -->
         <div class="cta-group">
           <a href="https://www.linkedin.com/in/nguyen-huong" class="btn-dark" target="_blank" rel="noopener">Connect on LinkedIn</a>
           <a href="https://github.com/huongntn" class="btn-dark" target="_blank" rel="noopener">Explore Codebase</a>
@@ -394,7 +391,6 @@
 
     <hr>
 
-    <!-- Project Case Work Directory -->
     <section id="work">
       <h2>Selected Engineering Cases</h2>
       <div class="article-feed">
@@ -416,7 +412,6 @@
 
     <hr>
 
-    <!-- Narrative Section (About Me Block) -->
     <section id="strategy">
       <h2>The Strategy</h2>
       <div class="article-item" style="font-size: 1.25rem;">
@@ -427,12 +422,10 @@
 
   </main>
 
-  <!-- Mobile-Responsive Left-Aligned Identity Footer Area -->
   <footer>
     <div class="container footer-wrapper">
       
-      <!-- Left Column: Icons stacked beautifully above brand info -->
-      <div class="footer-identity-group">
+      <div class="footer-links-row">
         <div class="social-icons">
           <a href="https://github.com/huongntn" target="_blank" rel="noopener" aria-label="GitHub Profile">
             <i class="fa-brands fa-github"></i>
@@ -441,17 +434,15 @@
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
         </div>
-        <div class="footer-brand">
-          <p>&copy; 2026 Thi Ngoc Huong Nguyen</p>
-        </div>
-      </div>
-      
-      <!-- Right Column: Legal Navigation Row (Mobile-Friendly) -->
-      <div class="footer-nav-group">
+        
         <nav class="legal-nav">
           <a href="/impress">Imprint</a>
           <a href="privacy.html">Privacy Policy</a>
         </nav>
+      </div>
+      
+      <div class="footer-bottom-brand">
+        <p>&copy; 2026 Thi Ngoc Huong Nguyen</p>
       </div>
       
     </div>
