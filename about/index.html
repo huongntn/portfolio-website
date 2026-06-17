@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Thi Ngoc Huong Nguyen</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <style>
+    :root {
+      --text-main: #252121;
+      --text-light: #747f80;
+      --brand-orange: #f26822;
+      --white: #ffffff;
+      --menu-sand: #eaddd7;
+      --font-headers: 'Montserrat', sans-serif;
+      --font-body: 'Source Serif Pro', serif;
+    }
+
+    * { box-sizing: border-box; }
+    body { background-color: #f5f5f5; color: var(--text-main); font-family: var(--font-body); font-size: 1.25rem; line-height: 1.7; margin: 0; padding: 0; }
+    .container { max-width: 700px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* Header */
+    header { background-color: var(--menu-sand); border-bottom: 1px solid var(--text-main); padding: 2rem 0; }
+    .nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-family: var(--font-headers); font-weight: 800; font-size: 1.5rem; color: var(--text-main); text-decoration: none; text-transform: uppercase; letter-spacing: -1.5px; }
+    .nav-links a { font-family: var(--font-headers); color: var(--text-main); text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; margin-left: 1.5rem; }
+    .nav-links a:hover { color: var(--brand-orange); }
+
+    /* Content */
+    main { padding: 4rem 0; }
+    h1 { font-family: var(--font-headers); font-size: 2.5rem; margin-bottom: 2rem; }
+    p { margin-bottom: 1.5rem; }
+    
+    /* Quote Style */
+    blockquote { border-left: 4px solid var(--brand-orange); padding-left: 1.5rem; margin: 3rem 0; font-style: italic; color: #444; }
+    
+    /* Links */
+    a { color: var(--text-main); text-decoration: none; box-shadow: inset 0 -2px 0 var(--text-light); transition: 0.15s; }
+    a:hover { color: var(--brand-orange); box-shadow: inset 0 -2px 0 var(--brand-orange); }
+
+    /* Footer */
+    footer { background-color: var(--text-main); color: var(--white); padding: 4rem 0 3rem 0; margin-top: 5rem; }
+    .footer-links-row { display: flex; justify-content: space-between; align-items: center; }
+    .social-icons a { color: var(--white); font-size: 1.35rem; }
+    .social-icons a:hover { color: var(--brand-orange); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container nav-wrapper">
+      <a href="/" class="logo">Huong Nguyen</a>
+      <nav class="nav-links">
+        <a href="/#work">Work</a>
+        <a href="/about/">About</a>
+        <a href="/blogs/">Blogs</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>About Me</h1>
+    
+    <p>I am a software developer based in Heilbronn, Germany. My work revolves around making complex systems simple.</p>
+    
+    <p>In the world of SAP consulting, I learned that most "solutions" are just adding more layers of complexity to problems that shouldn't exist. I prefer the opposite approach: stripping everything back until you have a system that actually functions predictably.</p>
+    
+    <blockquote>"The best code is the code you don't have to explain."</blockquote>
+    
+    <p>I spend my time building backend pipelines and designing data structures that are reliable. I believe in writing software that serves a clear business purpose rather than chasing trends.</p>
+    
+    <p>If you want to know more about my professional journey, you can see the full timeline on my <a href="https://www.linkedin.com/in/nguyen-huong" target="_blank" rel="noopener">LinkedIn profile</a>.</p>
+    
+    <p>If you have a project or a messy system that needs fixing, feel free to reach out.</p>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links-row">
+        <div class="social-icons">
+          <a href="https://github.com/huongntn" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/nguyen-huong" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
