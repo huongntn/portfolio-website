@@ -1,136 +1,69 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thi Ngoc Huong Nguyen | Software Developer</title>
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+---
+layout: default
+title: Home
+---
+
+<div class="hero-wrapper">
+  <div class="hero-text">
+    <h1>Hi, I’m Huong</h1>
+    <p>Software Engineer bridging human-centric design with backend logic. I build systems like I used to build cities: structured for function, but designed for the people who live inside them.</p>
+    <a href="https://www.linkedin.com/in/nguyen-huong" class="btn-dark" target="_blank">Connect on LinkedIn</a>
+    <a href="https://github.com/huongntn" class="btn-dark" target="_blank">Explore Codebase</a>
+  </div>
+  <div class="hero-profile">
+    <img src="/assets/profile_photo.png" alt="Huong Nguyen" style="width:280px;height:280px;border-radius:50%;object-fit:cover;">
+  </div>
+</div>
+
+<hr>
+
+<section id="toolshed">
+  <h2>The Toolshed</h2>
+  <p class="chapter-subtitle">My technical core: the lean stack I use to solve enterprise complexity.</p>
   
-  <style>
-    :root {
-      --background-body: #f5f5f5; --text-main: #252121; --text-light: #747f80;
-      --brand-orange: #f26822; --white: #ffffff; --menu-sand: #eaddd7;
-      --font-headers: 'Montserrat', sans-serif; --font-body: 'Source Serif Pro', serif;
-    }
-    * { box-sizing: border-box; }
-    body { background-color: var(--background-body); color: var(--text-main); font-family: var(--font-body); font-size: 1.15rem; line-height: 1.65; margin: 0; padding: 0; }
-    .container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
-    
-    header { background-color: var(--menu-sand); border-bottom: 1px solid var(--text-main); padding: 2rem 0; }
-    .nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-family: var(--font-headers); font-weight: 800; font-size: 1.5rem; color: var(--text-main); text-decoration: none; text-transform: uppercase; letter-spacing: -1.5px; }
-    .nav-links a { font-family: var(--font-headers); color: var(--text-main); text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; margin-left: 1.75rem; transition: color 0.15s; }
-    .nav-links a:hover { color: var(--brand-orange); }
-
-    .hero-wrapper { display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 4rem; padding: 6rem 0; }
-    h1 { font-family: var(--font-headers); font-weight: 800; font-size: 3.75rem; margin: 0 0 1.5rem 0; }
-    .btn-dark { font-family: var(--font-headers); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; color: var(--white); background-color: var(--text-main); text-decoration: none; padding: 0.95rem 1.5rem; border-radius: 30px; display: inline-block; margin-right: 1rem; transition: background-color 0.15s; }
-    .btn-dark:hover { background-color: var(--brand-orange); }
-    
-    section { padding: 4rem 0; }
-    h2 { font-family: var(--font-headers); font-size: 2.25rem; font-weight: 800; text-transform: uppercase; margin: 0 0 0.25rem 0; }
-    .chapter-subtitle { font-style: italic; color: var(--text-light); margin: 0 0 2.5rem 0; font-size: 1.25rem; }
-    hr { border: none; border-top: 1px solid var(--text-main); margin: 0; }
-
-    .project-link { text-decoration: none; color: inherit; display: block; margin-bottom: 1rem; }
-    .project-card { padding: 1.5rem; border-radius: 8px; transition: all 0.2s ease; }
-    .project-card:hover { background-color: rgba(0,0,0,0.05); border-left: 4px solid var(--brand-orange); }
-    .project-card h3 { font-family: var(--font-headers); font-size: 1.4rem; margin: 0.5rem 0; }
-    .project-meta { color: var(--brand-orange); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; }
-    .impact { display: block; margin-top: 0.8rem; font-weight: 600; }
-    .skill-tag { background: #e0e0e0; color: #444; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-family: var(--font-headers); margin-right: 0.5rem; display: inline-block; margin-top: 0.8rem; }
-
-    footer { background-color: var(--text-main); color: var(--white); padding: 4rem 0 3rem 0; margin-top: 5rem; }
-    .social-icons a { color: var(--white); font-size: 1.5rem; margin-right: 1.5rem; transition: color 0.15s; }
-    .social-icons a:hover { color: var(--brand-orange); }
-    .legal-nav a { color: var(--white); text-decoration: none; font-family: var(--font-headers); font-size: 0.8rem; text-transform: uppercase; margin-left: 1.5rem; transition: color 0.15s; }
-    .legal-nav a:hover { color: var(--brand-orange); }
-  </style>
-</head>
-<body>
-
-  <header>
-    <div class="container nav-wrapper">
-      <a href="/" class="logo">Huong Nguyen</a>
-      <nav class="nav-links"><a href="/about/">About</a><a href="#toolshed">Work</a><a href="/blogs/">Blogs</a></nav>
+  <a href="https://www.bosch-softwaretechnologies.com/en/" target="_blank" class="project-link">
+    <div class="project-card">
+      <span class="project-meta">Bosch</span>
+      <h3>SAP Fiori Rollout: My Inbox App</h3>
+      <p>Coordinated cross-functional teams to integrate diverse workflows into a centralized interface.</p>
+      <span class="impact">Impact: Centralized 12+ workflows into a single interface, reducing context-switching.</span>
+      <br><span class="skill-tag">SAP Fiori</span><span class="skill-tag">SAP ABAP</span>
     </div>
-  </header>
+  </a>
 
-  <main class="container">
-    <div class="hero-wrapper">
-      <div class="hero-text">
-        <h1>Hi, I’m Huong</h1>
-        <p>Software Engineer bridging human-centric design with backend logic. I build systems like I used to build cities: structured for function, but designed for the people who live inside them.</p>
-        <a href="https://www.linkedin.com/in/nguyen-huong" class="btn-dark" target="_blank">Connect on LinkedIn</a>
-        <a href="https://github.com/huongntn" class="btn-dark" target="_blank">Explore Codebase</a>
-      </div>
-      <div class="hero-profile"><img src="assets/profile_photo.png" alt="Huong Nguyen" style="width:280px;height:280px;border-radius:50%;object-fit:cover;"></div>
+  <a href="https://fptsoftware.com" target="_blank" class="project-link">
+    <div class="project-card">
+      <span class="project-meta">FPT Software</span>
+      <h3>Data Migration: Coupa/Dynamics AX to SAP</h3>
+      <p>Architected a custom migration engine using VBA and API-driven automation.</p>
+      <span class="impact">Impact: High-integrity migration of critical financial records, minimizing manual error.</span>
+      <br><span class="skill-tag">VBA</span><span class="skill-tag">REST API</span>
     </div>
-
-    <hr>
-    <section id="toolshed">
-      <h2>The Toolshed</h2>
-      <p class="chapter-subtitle">My technical core: the lean stack I use to solve enterprise complexity.</p>
-      
-      <a href="https://www.bosch-softwaretechnologies.com/en/" target="_blank" class="project-link">
-        <div class="project-card">
-          <span class="project-meta">Bosch</span>
-          <h3>SAP Fiori Rollout: My Inbox App</h3>
-          <p>Coordinated cross-functional teams to integrate diverse workflows into a centralized interface.</p>
-          <span class="impact">Impact: Centralized 12+ workflows into a single interface, reducing context-switching.</span>
-          <br><span class="skill-tag">SAP Fiori</span><span class="skill-tag">SAP ABAP</span>
-        </div>
-      </a>
-
-      <a href="https://fptsoftware.com" target="_blank" class="project-link">
-        <div class="project-card">
-          <span class="project-meta">FPT Software</span>
-          <h3>Data Migration: Coupa/Dynamics AX to SAP</h3>
-          <p>Architected a custom migration engine using VBA and API-driven automation.</p>
-          <span class="impact">Impact: High-integrity migration of critical financial records, minimizing manual error.</span>
-          <br><span class="skill-tag">VBA</span><span class="skill-tag">REST API</span>
-        </div>
-      </a>
-      
-      <a href="https://www.bosch.com" target="_blank" class="project-link">
-        <div class="project-card">
-          <span class="project-meta">Bosch</span>
-          <h3>FI Interface Management & Monitoring</h3>
-          <p>Integrated SAP AIF with Finance modules for real-time monitoring of IDoc errors.</p>
-          <span class="impact">Impact: Standardized error documentation, shifting team focus to proactive maintenance.</span>
-          <br><span class="skill-tag">SAP AIF</span><span class="skill-tag">NetWeaver</span>
-        </div>
-      </a>
-    </section>
-
-    <hr>
-    <section id="workshop">
-      <h2>The Workshop</h2>
-      <p class="chapter-subtitle">My academic research: bridging the gap between theory and real-world logic.</p>
-      <p>I apply architectural "systems thinking" to backend engineering, drawing from my research into urban heritage management.</p>
-    </section>
-
-    <hr>
-    <section id="studio">
-      <h2>The Studio</h2>
-      <p class="chapter-subtitle">My life beyond code: the influences that ground my perspective.</p>
-      <p>Outside of architecture, I enjoy perfecting traditional recipes, exploring linguistics, and spending time with my pets.</p>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <div style="display:flex; justify-content:space-between; align-items:center;">
-        <div class="social-icons"><a href="https://github.com/huongntn" target="_blank"><i class="fa-brands fa-github"></i></a><a href="https://www.linkedin.com/in/nguyen-huong" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
-        <nav class="legal-nav"><a href="/impress">Imprint</a><a href="privacy.html">Privacy Policy</a></nav>
-      </div>
-      <div style="margin-top:2rem; font-size: 0.8rem; color: var(--text-light);">&copy; 2026 Thi Ngoc Huong Nguyen</div>
+  </a>
+  
+  <a href="https://www.bosch.com" target="_blank" class="project-link">
+    <div class="project-card">
+      <span class="project-meta">Bosch</span>
+      <h3>FI Interface Management & Monitoring</h3>
+      <p>Integrated SAP AIF with Finance modules for real-time monitoring of IDoc errors.</p>
+      <span class="impact">Impact: Standardized error documentation, shifting team focus to proactive maintenance.</span>
+      <br><span class="skill-tag">SAP AIF</span><span class="skill-tag">NetWeaver</span>
     </div>
-  </footer>
+  </a>
+</section>
 
-</body>
-</html>
+<hr>
+
+<section id="workshop">
+  <h2>The Workshop</h2>
+  <p class="chapter-subtitle">My academic research: bridging the gap between theory and real-world logic.</p>
+  <p>I apply architectural "systems thinking" to backend engineering, drawing from my research into urban heritage management.</p>
+</section>
+
+<hr>
+
+<section id="studio">
+  <h2>The Studio</h2>
+  <p class="chapter-subtitle">My life beyond code: the influences that ground my perspective.</p>
+  <p>Outside of architecture, I enjoy perfecting traditional recipes, exploring linguistics, and spending time with my pets.</p>
+</section>
