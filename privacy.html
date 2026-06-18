@@ -32,7 +32,6 @@
     header { background-color: var(--menu-sand); border-bottom: 1px solid var(--text-main); padding: 2rem 0; }
     .nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
     .logo { font-family: var(--font-headers); font-weight: 800; font-size: 1.5rem; color: var(--text-main); text-decoration: none; text-transform: uppercase; letter-spacing: -1.5px; box-shadow: none !important; }
-    .logo:hover { color: var(--text-main); } 
     .nav-links a { font-family: var(--font-headers); color: var(--text-main); text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; margin-left: 1.75rem; letter-spacing: 0.5px; box-shadow: none !important; }
     .nav-links a:hover { color: var(--brand-orange); }
 
@@ -50,18 +49,12 @@
     a { color: var(--text-main); text-decoration: none; box-shadow: inset 0 -2px 0 var(--text-light); transition: box-shadow 0.15s, color 0.15s; }
     a:hover { color: var(--brand-orange); box-shadow: inset 0 -2px 0 var(--brand-orange); }
 
-    /* Footer - No underlines */
+    /* Refactored Footer */
     footer { background-color: var(--text-main); color: var(--white); padding: 4rem 0 3rem 0; margin-top: 5rem; }
-    .footer-links-row { display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2rem; }
-    @media (min-width: 768px) { .footer-links-row { flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 2.5rem; } }
-    .social-icons { display: flex; gap: 1.5rem; }
-    .social-icons a { color: var(--white); font-size: 1.35rem; box-shadow: none !important; }
+    .social-icons a { color: var(--white); font-size: 1.5rem; margin-right: 1.5rem; transition: color 0.15s; }
     .social-icons a:hover { color: var(--brand-orange); }
-    .legal-nav { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; }
-    .legal-nav a { color: var(--white); text-decoration: none; font-family: var(--font-headers); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: none !important; }
+    .legal-nav a { color: var(--white); text-decoration: none; font-family: var(--font-headers); font-size: 0.8rem; text-transform: uppercase; margin-left: 1.5rem; transition: color 0.15s; }
     .legal-nav a:hover { color: var(--brand-orange); }
-    .footer-bottom-brand { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1.5rem; }
-    .footer-bottom-brand p { margin: 0; font-size: 0.85rem; color: var(--text-light); }
   </style>
 </head>
 <body>
@@ -71,7 +64,7 @@
       <a href="/" class="logo">Huong Nguyen</a>
       <nav class="nav-links">
         <a href="/about/">About</a>
-        <a href="/#work">Work</a>
+        <a href="/#toolshed">Work</a>
         <a href="/blogs/">Blogs</a>
       </nav>
     </div>
@@ -119,21 +112,20 @@
   </main>
 
   <footer>
-    <div class="container footer-wrapper">
-      <div class="footer-links-row">
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
         <div class="social-icons">
-          <a href="https://github.com/huongntn" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/nguyen-huong" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/huongntn" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/nguyen-huong" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
         <nav class="legal-nav">
           <a href="/impress">Imprint</a>
           <a href="/privacy.html">Privacy Policy</a>
         </nav>
       </div>
-      <div class="footer-bottom-brand">
-        <p>&copy; 2026 Thi Ngoc Huong Nguyen</p>
-      </div>
+      <div style="margin-top:2rem; font-size: 0.8rem; color: var(--text-light);">&copy; 2026 Thi Ngoc Huong Nguyen</div>
     </div>
   </footer>
+
 </body>
 </html>
