@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Thi Ngoc Huong Nguyen</title>
+  <title>About Me | Thi Ngoc Huong Nguyen</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,23 +17,24 @@
       --font-headers: 'Montserrat', sans-serif; --font-body: 'Source Serif Pro', serif;
     }
     * { box-sizing: border-box; }
-    body { background-color: var(--background-body); color: var(--text-main); font-family: var(--font-body); font-size: 1.15rem; line-height: 1.7; margin: 0; padding: 0; }
+    body { background-color: var(--background-body); color: var(--text-main); font-family: var(--font-body); font-size: 1.15rem; line-height: 1.65; margin: 0; padding: 0; }
     .container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
     
     header { background-color: var(--menu-sand); border-bottom: 1px solid var(--text-main); padding: 2rem 0; }
     .nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-family: var(--font-headers); font-weight: 800; font-size: 1.5rem; color: var(--text-main); text-decoration: none; text-transform: uppercase; }
-    .nav-links a { font-family: var(--font-headers); color: var(--text-main); text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; margin-left: 1.75rem; }
-    
-    .about-wrapper { display: flex; gap: 4rem; padding: 4rem 0; align-items: flex-start; }
-    .about-image { width: 350px; flex-shrink: 0; }
-    .about-image img { width: 100%; border-radius: 8px; }
-    h2 { font-family: var(--font-headers); font-size: 2.25rem; font-weight: 800; text-transform: uppercase; margin-bottom: 1.5rem; }
-    p { margin-bottom: 1.5rem; }
+    .logo { font-family: var(--font-headers); font-weight: 800; font-size: 1.5rem; color: var(--text-main); text-decoration: none; text-transform: uppercase; letter-spacing: -1.5px; }
+    .nav-links a { font-family: var(--font-headers); color: var(--text-main); text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; margin-left: 1.75rem; transition: color 0.15s; }
+    .nav-links a:hover { color: var(--brand-orange); }
 
+    h2 { font-family: var(--font-headers); font-size: 2.25rem; font-weight: 800; text-transform: uppercase; margin: 4rem 0 2rem 0; }
+    .content-wrapper { padding-bottom: 4rem; }
+    .about-img { width: 100%; border-radius: 8px; margin-bottom: 2.5rem; }
+    
     footer { background-color: var(--text-main); color: var(--white); padding: 4rem 0 3rem 0; margin-top: 5rem; }
-    .social-icons a { color: var(--white); font-size: 1.5rem; margin-right: 1.5rem; }
+    .social-icons a { color: var(--white); font-size: 1.5rem; margin-right: 1.5rem; transition: color 0.15s; }
     .social-icons a:hover { color: var(--brand-orange); }
+    .legal-nav a { color: var(--white); text-decoration: none; font-family: var(--font-headers); font-size: 0.8rem; text-transform: uppercase; margin-left: 1.5rem; transition: color 0.15s; }
+    .legal-nav a:hover { color: var(--brand-orange); }
   </style>
 </head>
 <body>
@@ -45,40 +46,33 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="about-wrapper">
-      <div class="about-image">
-        <img src="assets/about_me.png" alt="Huong Nguyen">
-      </div>
-      <div class="about-text">
-        <h2>From Urban Spaces to Digital Systems</h2>
-        <p>My career has not been a ladder, but a playground. It is a series of deliberate trials and errors, each one teaching me that my strength lies in the intersection of the technical and the human.</p>
-        
-        <p>I began my path in Urban Planning at TU Darmstadt, learning how to design spaces for the people who inhabit them. When the pandemic moved our world into the digital sphere, I found myself captivated by the architecture of IT. Transitioning from an Urban Planner to a developer at FPT Software felt less like a departure and more like a change of medium. Whether I am mapping out city districts or ERP systems, the core objective remains the same: <strong>building functional, human-centric structures.</strong></p>
+  <main class="container content-wrapper">
+    <h2>About Me</h2>
+    <img src="../assets/about_me.png" alt="Huong Nguyen" class="about-img">
+    
+    <p>My career has not been a ladder, but a playground. It is a series of deliberate trials and errors, each one teaching me that my strength lies in the intersection of the technical and the human.</p>
+    
+    <p>I began my path in Urban Planning at TU Darmstadt, learning how to design spaces for the people who inhabit them. When the pandemic moved our world into the digital sphere, I found myself captivated by the architecture of IT. Transitioning from an Urban Planner to a developer at FPT Software felt less like a departure and more like a change of medium. Whether I am mapping out city districts or ERP systems, the core objective remains the same: <strong>building functional, human-centric structures.</strong></p>
 
-        <p>Heilbronn was a love at second sight. At first, it felt too small, its dialect too unfamiliar. But through the rhythm of working here, learning to cook local staples like Maultaschen, and building a home for my pets, I realized this city is where my professional and personal life truly found harmony.</p>
+    <p>Heilbronn was a love at second sight. At first, it felt too small, its dialect too unfamiliar. But through the rhythm of working here, learning to cook local staples like Maultaschen, and building a home for my pets, I realized this city is where my professional and personal life truly found harmony.</p>
 
-        <p>Today, I balance the "best of both worlds." I am technically rigorous—architecting systems for corporations like Bosch and Schwarz Digits—but I remain deeply sensitive to the human element. I am an engineer who values linguistics as much as logic, and a researcher who believes that the most complex systems are only successful if they serve the human heart.</p>
-      </div>
-    </section>
+    <p>Today, I balance the "best of both worlds." I am technically rigorous—architecting systems for corporations like Bosch and Schwarz Digits—but I remain deeply sensitive to the human element. I am an engineer who values linguistics as much as logic, and a researcher who believes that the most complex systems are only successful if they serve the human heart.</p>
   </main>
 
   <footer>
     <div class="container">
-    <div style="display:flex; justify-content:space-between; align-items:center;">
-      <div class="social-icons">
-        <a href="https://github.com/huongntn" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/nguyen-huong" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <div class="social-icons">
+          <a href="https://github.com/huongntn" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/nguyen-huong" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <nav class="legal-nav">
+          <a href="/impress">Imprint</a>
+          <a href="/privacy.html">Privacy Policy</a>
+        </nav>
       </div>
-      <nav class="legal-nav">
-        <a href="/impress">Imprint</a>
-        <a href="/privacy.html">Privacy Policy</a>
-      </nav>
+      <div style="margin-top:2rem; font-size: 0.8rem; color: var(--text-light);">&copy; 2026 Thi Ngoc Huong Nguyen</div>
     </div>
-    <div style="margin-top:2rem; font-size: 0.8rem; color: var(--text-light);">
-      &copy; 2026 Thi Ngoc Huong Nguyen
-    </div>
-  </div>
   </footer>
 
 </body>
