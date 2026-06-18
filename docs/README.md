@@ -21,13 +21,15 @@ This website is engineered with a focus on maximum performance, security, and lo
 The project follows a clean, decoupled architecture to separate content, legal frameworks, and global layouts:
 
 ```text
-portfolio-website/
-├── css/
-│   └── styles.css        # One central stylesheet for your entire website
-├── blogs/
-│   ├── index.html        # Your Blog Feed page (nguyen-huong.com/blogs)
-│   ├── clean-code.html   # Individual blog post article
-│   └── edge-hosting.html # Individual blog post article
-├── index.html            # The Core Hub (Hero, Skills, Projects, About, Contact)
-├── privacy.html          # GDPR Privacy Policy
-└── README.md             # Your professional repository documentation
+porfolio-website/
+├── _includes/          
+│   ├── header.html
+│   └── footer.html
+├── _layouts/           
+│   └── default.html
+├── assets/             
+├── _posts/             
+├── about/
+│   └── index.html      
+├── index.html          
+└── _config.yml         
