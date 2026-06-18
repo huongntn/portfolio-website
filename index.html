@@ -20,95 +20,109 @@
     body { background-color: var(--background-body); color: var(--text-main); font-family: var(--font-body); font-size: 1.15rem; line-height: 1.65; margin: 0; padding: 0; }
     .container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
     header { background-color: var(--menu-sand); border-bottom: 1px solid var(--text-main); padding: 2rem 0; }
-    .logo { font-family: var(--font-headers); font-weight: 800; font-size: 1.5rem; text-decoration: none; color: var(--text-main); }
-    .hero-wrapper { padding: 4rem 0; }
-    h1 { font-family: var(--font-headers); font-size: 3.75rem; margin: 0 0 1.5rem 0; }
+    .nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-family: var(--font-headers); font-weight: 800; font-size: 1.5rem; color: var(--text-main); text-decoration: none; text-transform: uppercase; letter-spacing: -1.5px; }
+    .nav-links a { font-family: var(--font-headers); color: var(--text-main); text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; margin-left: 1.75rem; letter-spacing: 0.5px; }
+    .hero-wrapper { display: flex; flex-direction: column-reverse; gap: 2rem; padding: 4rem 0; align-items: center; }
+    h1 { font-family: var(--font-headers); font-weight: 800; font-size: 3.75rem; line-height: 1.1; margin: 0 0 1.5rem 0; letter-spacing: -1.5px; }
+    .btn-dark { font-family: var(--font-headers); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; color: var(--white); background-color: var(--text-main); text-decoration: none; padding: 0.95rem 1.5rem; border-radius: 30px; display: inline-block; }
     section { padding: 4rem 0; }
-    h2 { font-family: var(--font-headers); font-size: 2.25rem; text-transform: uppercase; margin-bottom: 0.5rem; }
-    .chapter-subtitle { font-style: italic; color: var(--text-light); margin-bottom: 2.5rem; font-size: 1.25rem; }
-
-    /* Interactive Project Card */
-    .project-link { text-decoration: none; color: inherit; display: block; }
-    .project-card { padding: 1.5rem; border-radius: 8px; transition: all 0.2s ease; margin-bottom: 1rem; }
-    .project-card:hover { background-color: rgba(0,0,0,0.05); border-left: 4px solid var(--brand-orange); }
-    .project-card h3 { font-family: var(--font-headers); margin: 0.5rem 0; font-size: 1.4rem; }
-    .project-card .meta { color: var(--brand-orange); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; }
+    h2 { font-family: var(--font-headers); font-size: 2.25rem; font-weight: 800; text-transform: uppercase; margin: 0 0 0.25rem 0; }
+    .chapter-subtitle { font-family: var(--font-body); font-style: italic; color: var(--text-light); margin: 0 0 2.5rem 0; font-size: 1.25rem; }
+    hr { border: none; border-top: 1px solid var(--text-main); margin: 0; }
     
-    /* Skill Tags */
-    .skills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
-    .skill-tag { background: #e0e0e0; color: #444; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-family: var(--font-headers); }
+    .project-link { text-decoration: none; color: inherit; display: block; margin-bottom: 1rem; }
+    .project-card { padding: 1.5rem; border-radius: 8px; transition: all 0.2s ease; }
+    .project-card:hover { background-color: rgba(0,0,0,0.05); border-left: 4px solid var(--brand-orange); }
+    .project-card h3 { font-family: var(--font-headers); font-size: 1.4rem; margin: 0.5rem 0; }
+    .project-meta { color: var(--brand-orange); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; }
+    .skill-tag { background: #e0e0e0; color: #444; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-family: var(--font-headers); margin-right: 0.5rem; display: inline-block; margin-top: 0.5rem; }
+
+    footer { background-color: var(--text-main); color: var(--white); padding: 4rem 0 3rem 0; margin-top: 5rem; }
+    .social-icons a { color: var(--white); font-size: 1.35rem; margin-right: 1.5rem; }
+    .legal-nav a { color: var(--white); text-decoration: none; font-family: var(--font-headers); font-size: 0.8rem; text-transform: uppercase; margin-left: 1.5rem; }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="container"><a href="/" class="logo">Huong Nguyen</a></div>
+    <div class="container nav-wrapper">
+      <a href="/" class="logo">Huong Nguyen</a>
+      <nav class="nav-links"><a href="#toolshed">Work</a><a href="/about/">About</a><a href="/blogs/">Blogs</a></nav>
+    </div>
   </header>
 
   <main class="container">
     <div class="hero-wrapper">
-      <h1>Hi, I’m Huong</h1>
-      <p>Software Engineer bridging human-centric design with backend logic.</p>
+      <div class="hero-text">
+        <h1>Hi, I’m Huong</h1>
+        <p>Software Engineer bridging human-centric design with backend logic. I build systems like I used to build cities: structured for function, but designed for the people who live inside them.</p>
+        <a href="https://www.linkedin.com/in/nguyen-huong" class="btn-dark" target="_blank">Connect on LinkedIn</a>
+      </div>
     </div>
+
+    <hr>
 
     <section id="toolshed">
       <h2>The Toolshed</h2>
       <p class="chapter-subtitle">My technical core: the lean stack I use to solve enterprise complexity.</p>
-
+      
+      <!-- SAP Fiori -->
       <a href="https://www.bosch.com" target="_blank" class="project-link">
         <div class="project-card">
-          <span class="meta">Bosch</span>
-          <h3>SAP Fiori Rollout</h3>
-          <p>Centralized 12+ workflows into a unified interface, reducing context-switching for end-users.</p>
-          <div class="skills">
-            <span class="skill-tag">SAP Fiori</span>
-            <span class="skill-tag">SAP ABAP</span>
-            <span class="skill-tag">S/4HANA</span>
-          </div>
+          <span class="project-meta">Bosch</span>
+          <h3>SAP Fiori Rollout: My Inbox App</h3>
+          <p>Integrated diverse workflows into a centralized interface. <strong>Impact:</strong> Unified multi-system data for efficient user processing and provided high-level technical consultation across development teams.</p>
+          <span class="skill-tag">SAP Fiori</span><span class="skill-tag">SAP ABAP</span><span class="skill-tag">S/4HANA</span>
         </div>
       </a>
 
-      <a href="https://fptsoftware.com" target="_blank" class="project-link">
+      <!-- Data Migration -->
+      <a href="https://www.fpt-software.com" target="_blank" class="project-link">
         <div class="project-card">
-          <span class="meta">FPT Software</span>
-          <h3>Coupa Data Migration</h3>
-          <p>Architected a custom migration engine to automate complex financial data mapping between legacy systems and SAP.</p>
-          <div class="skills">
-            <span class="skill-tag">VBA</span>
-            <span class="skill-tag">REST API</span>
-            <span class="skill-tag">JSON</span>
-          </div>
+          <span class="project-meta">FPT Software</span>
+          <h3>Data Migration: Coupa/Dynamics AX to SAP</h3>
+          <p>Managed critical finance data migration for a global fashion retailer. <strong>Impact:</strong> Enhanced migration tools via VBA and API automation, ensuring data integrity for Chart of Accounts and supplier management.</p>
+          <span class="skill-tag">VBA</span><span class="skill-tag">REST API</span><span class="skill-tag">OAuth 2.0</span>
         </div>
       </a>
 
+      <!-- FI Interface -->
       <a href="https://www.bosch.com" target="_blank" class="project-link">
         <div class="project-card">
-          <span class="meta">Bosch</span>
-          <h3>FI Interface Management</h3>
-          <p>Integrated Finance modules with SAP AIF for real-time monitoring of IDoc errors and proactive maintenance.</p>
-          <div class="skills">
-            <span class="skill-tag">SAP AIF</span>
-            <span class="skill-tag">SAP NetWeaver</span>
-          </div>
+          <span class="project-meta">Bosch</span>
+          <h3>FI Interface Management & Monitoring</h3>
+          <p>Integrated SAP AIF with the Finance module to handle IDoc errors. <strong>Impact:</strong> Established standardized error documentation and proactive monitoring to optimize system reliability.</p>
+          <span class="skill-tag">SAP AIF</span><span class="skill-tag">SAP NetWeaver</span>
         </div>
       </a>
     </section>
+
+    <hr>
 
     <section id="workshop">
       <h2>The Workshop</h2>
       <p class="chapter-subtitle">My academic research: bridging the gap between theory and real-world logic.</p>
-      <div class="project-card">
-        <p>Currently researching distributed system consistency models and optimizing low-latency data structures.</p>
-      </div>
+      <p>My research bridges policy and practical execution—investigating heritage management mechanisms and distributed system consistency models to inform modern software architecture.</p>
     </section>
+
+    <hr>
 
     <section id="studio">
       <h2>The Studio</h2>
       <p class="chapter-subtitle">My life beyond code: the influences that ground my perspective.</p>
-      <div class="project-card">
-        <p>Perfecting Maultaschen recipes, exploring linguistics in Heilbronn, and spending time with my pets.</p>
-      </div>
+      <p>Outside of enterprise architecture, I find my balance in the details of everyday life—from traditional recipes to linguistics and my pets.</p>
     </section>
   </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex; justify-content:space-between;">
+        <div class="social-icons"><a href="https://github.com/huongntn"><i class="fa-brands fa-github"></i></a></div>
+        <nav class="legal-nav"><a href="/impress">Imprint</a><a href="privacy.html">Privacy Policy</a></nav>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
