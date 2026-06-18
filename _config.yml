@@ -1,0 +1,16 @@
+# Site Settings
+title: "Huong Nguyen"
+description: "Portfolio Website"
+url: "https://github.com/huongntn/portfolio-website
+
+# Jekyll Settings
+theme: null 
+permalink: /about/
+markdown: kramdown 
+
+# Exclude files from the build process
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - README.md
