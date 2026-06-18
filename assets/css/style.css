@@ -1,78 +1,38 @@
-/* --- Variables & Reset --- */
 :root {
-  --text-main: #333333;
-  --text-light: #777777;
-  --white: #ffffff;
-  --menu-sand: #f4e8d3;
-  --brand-orange: #d35400;
-  --font-headers: 'Montserrat', sans-serif;
-  --font-body: 'Source Serif Pro', serif;
+  --background-body: #f5f5f5; --text-main: #252121; --text-light: #747f80;
+  --brand-orange: #f26822; --white: #ffffff; --menu-sand: #eaddd7;
+  --font-headers: 'Montserrat', sans-serif; --font-body: 'Source Serif Pro', serif;
 }
+* { box-sizing: border-box; }
+body { background-color: var(--background-body); color: var(--text-main); font-family: var(--font-body); font-size: 1.15rem; line-height: 1.65; margin: 0; padding: 0; }
+.container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+header { background-color: var(--menu-sand); border-bottom: 1px solid var(--text-main); padding: 2rem 0; }
+.nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: var(--font-headers); font-weight: 800; font-size: 1.5rem; color: var(--text-main); text-decoration: none; text-transform: uppercase; letter-spacing: -1.5px; }
+.nav-links a { font-family: var(--font-headers); color: var(--text-main); text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; margin-left: 1.75rem; transition: color 0.15s; }
+.nav-links a:hover { color: var(--brand-orange); }
 
-body {
-  font-family: var(--font-body);
-  line-height: 1.6;
-  color: var(--text-main);
-  background-color: var(--white);
-}
+.hero-wrapper { display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 4rem; padding: 6rem 0; }
+h1 { font-family: var(--font-headers); font-weight: 800; font-size: 3.75rem; margin: 0 0 1.5rem 0; }
+.btn-dark { font-family: var(--font-headers); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; color: var(--white); background-color: var(--text-main); text-decoration: none; padding: 0.95rem 1.5rem; border-radius: 30px; display: inline-block; margin-right: 1rem; transition: background-color 0.15s; }
+.btn-dark:hover { background-color: var(--brand-orange); }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
+section { padding: 4rem 0; }
+h2 { font-family: var(--font-headers); font-size: 2.25rem; font-weight: 800; text-transform: uppercase; margin: 0 0 0.25rem 0; }
+.chapter-subtitle { font-style: italic; color: var(--text-light); margin: 0 0 2.5rem 0; font-size: 1.25rem; }
+hr { border: none; border-top: 1px solid var(--text-main); margin: 0; }
 
-/* --- Layout & Typography --- */
-h1, h2, h3 { font-family: var(--font-headers); text-transform: uppercase; }
-h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-h2 { font-size: 1.8rem; margin-bottom: 1rem; }
-hr { margin: 3rem 0; border: 0; border-top: 1px solid #eee; }
+.project-link { text-decoration: none; color: inherit; display: block; margin-bottom: 1rem; }
+.project-card { padding: 1.5rem; border-radius: 8px; transition: all 0.2s ease; }
+.project-card:hover { background-color: rgba(0,0,0,0.05); border-left: 4px solid var(--brand-orange); }
+.project-card h3 { font-family: var(--font-headers); font-size: 1.4rem; margin: 0.5rem 0; }
+.project-meta { color: var(--brand-orange); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; }
+.impact { display: block; margin-top: 0.8rem; font-weight: 600; }
+.skill-tag { background: #e0e0e0; color: #444; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-family: var(--font-headers); margin-right: 0.5rem; display: inline-block; margin-top: 0.8rem; }
 
-/* --- Hero Section --- */
-.hero-wrapper { display: flex; align-items: center; gap: 3rem; margin: 4rem 0; }
-.hero-text { flex: 1; }
-.hero-profile img { border: 5px solid var(--menu-sand); }
-
-.btn-dark {
-  display: inline-block;
-  background: var(--text-main);
-  color: var(--white);
-  padding: 0.8rem 1.5rem;
-  text-decoration: none;
-  font-family: var(--font-headers);
-  font-size: 0.8rem;
-  margin-top: 1rem;
-  margin-right: 0.5rem;
-  transition: background 0.3s;
-}
-.btn-dark:hover { background: var(--brand-orange); }
-
-/* --- Project Cards (Toolshed) --- */
-.project-link { text-decoration: none; color: inherit; }
-.project-card {
-  padding: 1.5rem;
-  border: 1px solid #ddd;
-  margin-bottom: 1.5rem;
-  transition: transform 0.2s;
-}
-.project-card:hover { border-color: var(--brand-orange); }
-.project-meta { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: var(--brand-orange); }
-.skill-tag {
-  display: inline-block;
-  background: #eee;
-  padding: 0.2rem 0.5rem;
-  font-size: 0.75rem;
-  margin-right: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-/* --- About Page Image --- */
-.about-img {
-  width: 100%;
-  max-width: 400px;
-  float: right;
-  margin: 0 0 1rem 2rem;
-  border-radius: 8px;
-}
+footer { background-color: var(--text-main); color: var(--white); padding: 4rem 0 3rem 0; margin-top: 5rem; }
+.social-icons a { color: var(--white); font-size: 1.5rem; margin-right: 1.5rem; transition: color 0.15s; }
+.social-icons a:hover { color: var(--brand-orange); }
+.legal-nav a { color: var(--white); text-decoration: none; font-family: var(--font-headers); font-size: 0.8rem; text-transform: uppercase; margin-left: 1.5rem; transition: color 0.15s; }
+.legal-nav a:hover { color: var(--brand-orange); }
