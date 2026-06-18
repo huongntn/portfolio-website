@@ -49,13 +49,14 @@ h2 { font-family: var(--font-headers); font-size: 2.25rem; font-weight: 800; tex
 hr { border: none; border-top: 1px solid var(--text-main); margin: 0; }
 
 /* About Page Specific Image */
+.about-header { text-align: center; margin-top: 3rem; margin-bottom: 2rem; }
 .about-img-rect {
   width: 100%;
   max-width: 960px;
   height: auto;
   border-radius: 12px;
   display: block;
-  margin: 2rem 0;
+  margin: 2rem auto;
 }
 
 /* Toolshed / Project Cards */
