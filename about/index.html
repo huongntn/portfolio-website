@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me | Thi Ngoc Huong Nguyen</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -17,24 +18,33 @@
       --font-headers: 'Montserrat', sans-serif; --font-body: 'Source Serif Pro', serif;
     }
     * { box-sizing: border-box; }
-    body { background-color: var(--background-body); color: var(--text-main); font-family: var(--font-body); font-size: 1.15rem; line-height: 1.65; margin: 0; padding: 0; }
+    body { background-color: var(--background-body); color: var(--text-main); font-family: var(--font-body); font-size: 1.15rem; line-height: 1.65; margin: 0; padding: 0; -webkit-font-smoothing: antialiased; }
     .container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
-    
+
     header { background-color: var(--menu-sand); border-bottom: 1px solid var(--text-main); padding: 2rem 0; }
     .nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-family: var(--font-headers); font-weight: 800; font-size: 1.5rem; color: var(--text-main); text-decoration: none; text-transform: uppercase; letter-spacing: -1.5px; }
-    .nav-links a { font-family: var(--font-headers); color: var(--text-main); text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; margin-left: 1.75rem; transition: color 0.15s; }
+    .logo { font-family: var(--font-headers); font-weight: 800; font-size: 1.5rem; color: var(--text-main); text-decoration: none; text-transform: uppercase; letter-spacing: -1.5px; box-shadow: none !important; }
+    .nav-links a { font-family: var(--font-headers); color: var(--text-main); text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; margin-left: 1.75rem; letter-spacing: 0.5px; box-shadow: none !important; }
     .nav-links a:hover { color: var(--brand-orange); }
 
-    h2 { font-family: var(--font-headers); font-size: 2.25rem; font-weight: 800; text-transform: uppercase; margin: 4rem 0 2rem 0; }
-    .content-wrapper { padding-bottom: 4rem; }
-    .about-img { width: 100%; border-radius: 8px; margin-bottom: 2.5rem; }
+    .hero { padding: 4rem 0 3rem 0; }
+    h1 { font-family: var(--font-headers); font-weight: 800; font-size: 2.5rem; margin: 0 0 1.5rem 0; text-transform: uppercase; letter-spacing: -1.5px; }
     
+    .about-img { width: 100%; border-radius: 8px; margin: 2rem 0; }
+    hr { border: none; border-top: 1px solid var(--text-main); margin: 0; }
+    section { padding: 4rem 0; }
+
     footer { background-color: var(--text-main); color: var(--white); padding: 4rem 0 3rem 0; margin-top: 5rem; }
-    .social-icons a { color: var(--white); font-size: 1.5rem; margin-right: 1.5rem; transition: color 0.15s; }
+    .footer-links-row { display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2rem; }
+    @media (min-width: 768px) { .footer-links-row { flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 2.5rem; } }
+    .social-icons { display: flex; gap: 1.5rem; }
+    .social-icons a { color: var(--white); font-size: 1.35rem; box-shadow: none !important; }
     .social-icons a:hover { color: var(--brand-orange); }
-    .legal-nav a { color: var(--white); text-decoration: none; font-family: var(--font-headers); font-size: 0.8rem; text-transform: uppercase; margin-left: 1.5rem; transition: color 0.15s; }
+    .legal-nav { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; }
+    .legal-nav a { color: var(--white); text-decoration: none; font-family: var(--font-headers); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: none !important; }
     .legal-nav a:hover { color: var(--brand-orange); }
+    .footer-bottom-brand { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1.5rem; }
+    .footer-bottom-brand p { margin: 0; font-size: 0.85rem; color: var(--text-light); }
   </style>
 </head>
 <body>
@@ -42,36 +52,45 @@
   <header>
     <div class="container nav-wrapper">
       <a href="/" class="logo">Huong Nguyen</a>
-      <nav class="nav-links"><a href="/about/">About</a><a href="/#toolshed">Work</a><a href="/blogs/">Blogs</a></nav>
+      <nav class="nav-links">
+        <a href="/about/">About</a>
+        <a href="/#work">Work</a>
+        <a href="/blogs/">Blogs</a>
+      </nav>
     </div>
   </header>
 
-  <main class="container content-wrapper">
-    <h2>About Me</h2>
-    <img src="../assets/about_me.png" alt="Huong Nguyen" class="about-img">
-    
-    <p>My career has not been a ladder, but a playground. It is a series of deliberate trials and errors, each one teaching me that my strength lies in the intersection of the technical and the human.</p>
-    
-    <p>I began my path in Urban Planning at TU Darmstadt, learning how to design spaces for the people who inhabit them. When the pandemic moved our world into the digital sphere, I found myself captivated by the architecture of IT. Transitioning from an Urban Planner to a developer at FPT Software felt less like a departure and more like a change of medium. Whether I am mapping out city districts or ERP systems, the core objective remains the same: <strong>building functional, human-centric structures.</strong></p>
+  <main class="container">
+    <div class="hero"><h1>About Me</h1></div>
+    <hr>
+    <section>
+      <img src="../assets/about_me.png" alt="Huong Nguyen" class="about-img">
+      <hr>
+      <p>My career has not been a ladder, but a playground. It is a series of deliberate trials and errors, each one teaching me that my strength lies in the intersection of the technical and the human.</p>
+      
+      <p>I began my path in Urban Planning at TU Darmstadt, learning how to design spaces for the people who inhabit them. When the pandemic moved our world into the digital sphere, I found myself captivated by the architecture of IT. Transitioning from an Urban Planner to a developer at FPT Software felt less like a departure and more like a change of medium. Whether I am mapping out city districts or ERP systems, the core objective remains the same: <strong>building functional, human-centric structures.</strong></p>
 
-    <p>Heilbronn was a love at second sight. At first, it felt too small, its dialect too unfamiliar. But through the rhythm of working here, learning to cook local staples like Maultaschen, and building a home for my pets, I realized this city is where my professional and personal life truly found harmony.</p>
+      <p>Heilbronn was a love at second sight. At first, it felt too small, its dialect too unfamiliar. But through the rhythm of working here, learning to cook local staples like Maultaschen, and building a home for my pets, I realized this city is where my professional and personal life truly found harmony.</p>
 
-    <p>Today, I balance the "best of both worlds." I am technically rigorous—architecting systems for corporations like Bosch and Schwarz Digits—but I remain deeply sensitive to the human element. I am an engineer who values linguistics as much as logic, and a researcher who believes that the most complex systems are only successful if they serve the human heart.</p>
+      <p>Today, I balance the "best of both worlds." I am technically rigorous—architecting systems for corporations like Bosch and Schwarz Digits, but I remain deeply sensitive to the human element. I am an engineer who values linguistics as much as logic, and a researcher who believes that the most complex systems are only successful if they serve the human heart.</p>
+    </section>
   </main>
 
   <footer>
     <div class="container">
-      <div style="display:flex; justify-content:space-between; align-items:center;">
+      <div class="footer-links-row">
         <div class="social-icons">
-          <a href="https://github.com/huongntn" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/nguyen-huong" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/huongntn" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/nguyen-huong" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
         <nav class="legal-nav">
           <a href="/impress">Imprint</a>
           <a href="/privacy.html">Privacy Policy</a>
         </nav>
       </div>
-      <div style="margin-top:2rem; font-size: 0.8rem; color: var(--text-light);">&copy; 2026 Thi Ngoc Huong Nguyen</div>
+      <div class="footer-bottom-brand">
+        <p>&copy; 2026 Thi Ngoc Huong Nguyen</p>
+      </div>
     </div>
   </footer>
 
