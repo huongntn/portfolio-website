@@ -42,6 +42,10 @@
     p { margin: 0 0 1.5rem 0; }
     hr { border: none; border-top: 1px solid var(--text-main); margin: 0; }
     
+    /* Photo styling */
+    .about-image { margin: 3rem 0; }
+    .about-image img { width: 100%; max-width: 600px; height: auto; border-radius: 8px; display: block; }
+    
     /* Quote Styling */
     blockquote { border-left: 4px solid var(--brand-orange); padding-left: 1.5rem; margin: 2rem 0; font-family: var(--font-body); font-style: italic; font-weight: 400; font-size: 1.5rem; color: var(--text-main); }
     
@@ -49,7 +53,7 @@
     a { color: var(--text-main); text-decoration: none; box-shadow: inset 0 -2px 0 var(--text-light); transition: box-shadow 0.15s, color 0.15s; }
     a:hover { color: var(--brand-orange); box-shadow: inset 0 -2px 0 var(--brand-orange); }
 
-    /* Footer */
+    /* Footer - No underlines */
     footer { background-color: var(--text-main); color: var(--white); padding: 4rem 0 3rem 0; margin-top: 5rem; }
     .footer-links-row { display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2rem; }
     @media (min-width: 768px) { .footer-links-row { flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 2.5rem; } }
@@ -79,6 +83,9 @@
   <main class="container">
     <div class="hero"><h1>About Me</h1></div>
     <hr>
+    <div class="about-image">
+      <img src="assets/about_me.png" alt="Huong Nguyen">
+    </div>
     <section>
       <p>I am a software developer based in Heilbronn, Germany. My work revolves around making complex systems simple.</p>
       <p>In the world of SAP consulting, I learned that most "solutions" are just adding layers of complexity to problems that shouldn't exist. I prefer the opposite approach: stripping everything back until you have a system that actually functions predictably.</p>
