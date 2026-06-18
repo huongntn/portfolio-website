@@ -4,251 +4,111 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thi Ngoc Huong Nguyen | Software Developer</title>
-  <meta name="description" content="Software engineer building deterministic backend pipelines and minimal, text-first web environments.">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  
-  <link rel="stylesheet" href="/css/styles.css">
   
   <style>
     :root {
-      --background-body: #f5f5f5;
-      --text-main: #252121;
-      --text-light: #747f80;
-      --brand-orange: #f26822;
-      --white: #ffffff;
-      --menu-sand: #eaddd7;
-      
-      --font-headers: 'Montserrat', sans-serif;
-      --font-body: 'Source Serif Pro', serif;
+      --background-body: #f5f5f5; --text-main: #252121; --text-light: #747f80;
+      --brand-orange: #f26822; --white: #ffffff; --menu-sand: #eaddd7;
+      --font-headers: 'Montserrat', sans-serif; --font-body: 'Source Serif Pro', serif;
     }
-
     * { box-sizing: border-box; }
-
-    body {
-      background-color: var(--background-body);
-      color: var(--text-main);
-      font-family: var(--font-body);
-      font-size: 1.15rem;
-      line-height: 1.65;
-      margin: 0;
-      padding: 0;
-      -webkit-font-smoothing: antialiased;
-    }
-
+    body { background-color: var(--background-body); color: var(--text-main); font-family: var(--font-body); font-size: 1.15rem; line-height: 1.65; margin: 0; padding: 0; }
     .container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
-
     header { background-color: var(--menu-sand); border-bottom: 1px solid var(--text-main); padding: 2rem 0; }
-
-    .nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
-
-    .logo { font-family: var(--font-headers); font-weight: 800; font-size: 1.5rem; color: var(--text-main); text-decoration: none; text-transform: uppercase; letter-spacing: -1.5px; }
-
-    .nav-links a { font-family: var(--font-headers); color: var(--text-main); text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; margin-left: 1.75rem; letter-spacing: 0.5px; }
-
-    .nav-links a:hover { color: var(--brand-orange); }
-
-    .hero-wrapper { display: flex; flex-direction: column-reverse; gap: 2rem; padding: 4rem 0; align-items: center; }
-
-    @media (min-width: 768px) {
-      .hero-wrapper { flex-direction: row; justify-content: space-between; align-items: center; gap: 4rem; padding: 6rem 0 5rem 0; }
-    }
-
-    .hero-text { flex: 1; width: 100%; }
-
-    .hero-profile { flex-shrink: 0; width: 280px; height: 280px; }
-
-    @media (min-width: 768px) { .hero-profile { width: 340px; height: 340px; } }
-
-    .profile-circle { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; }
-
-    h1 { font-family: var(--font-headers); font-weight: 800; font-size: 2.5rem; line-height: 1.1; margin: 0 0 1.5rem 0; letter-spacing: -1.5px; }
-
-    @media (min-width: 680px) { h1 { font-size: 3.75rem; } }
-
-    .hero-text p { font-size: 1.25rem; margin: 0 0 2rem 0; color: var(--text-main); }
-
-    .cta-group { display: flex; flex-direction: column; gap: 1rem; width: 100%; }
-
-    @media (min-width: 480px) { .cta-group { flex-direction: row; align-items: center; } }
-
-    .btn-dark { font-family: var(--font-headers); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--white); background-color: var(--text-main); text-decoration: none; padding: 0.95rem 1.5rem; border-radius: 30px; transition: background-color 0.15s ease; text-align: center; display: inline-block; }
-
-    @media (min-width: 480px) { .btn-dark { flex: 1; max-width: 240px; } }
-
-    .btn-dark:hover { background-color: var(--brand-orange); }
-
+    .logo { font-family: var(--font-headers); font-weight: 800; font-size: 1.5rem; text-decoration: none; color: var(--text-main); }
+    .hero-wrapper { padding: 4rem 0; }
+    h1 { font-family: var(--font-headers); font-size: 3.75rem; margin: 0 0 1.5rem 0; }
     section { padding: 4rem 0; }
+    h2 { font-family: var(--font-headers); font-size: 2.25rem; text-transform: uppercase; margin-bottom: 0.5rem; }
+    .chapter-subtitle { font-style: italic; color: var(--text-light); margin-bottom: 2.5rem; font-size: 1.25rem; }
 
-    h2 { font-family: var(--font-headers); font-size: 1.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: -1px; margin: 0 0 0.25rem 0; }
-
-    .chapter-subtitle { font-family: var(--font-body); font-style: italic; color: var(--text-light); margin: 0 0 2.5rem 0; font-size: 1.25rem; }
-
-    @media (min-width: 680px) { h2 { font-size: 2.25rem; } }
-
-    hr { border: none; border-top: 1px solid var(--text-main); margin: 0; }
-
-    .article-feed { display: flex; flex-direction: column; gap: 3.5rem; }
-
-    .article-item { max-width: 780px; }
-
-    .article-tag { font-family: var(--font-headers); font-size: 0.8rem; color: var(--brand-orange); text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem; letter-spacing: 1px; }
-
-    .article-item h3 { font-family: var(--font-headers); font-size: 1.6rem; font-weight: 700; margin: 0 0 0.85rem 0; line-height: 1.2; letter-spacing: -0.5px; }
-
-    @media (min-width: 680px) { .article-item h3 { font-size: 2rem; } }
-
-    .article-item h3 a { color: var(--text-main); text-decoration: none; box-shadow: inset 0 -2px 0 var(--text-light); transition: box-shadow 0.15s, color 0.15s; }
-
-    .article-item h3 a:hover { color: var(--brand-orange); box-shadow: inset 0 -2px 0 var(--brand-orange); }
-
-    .article-item p { margin: 0; color: var(--text-main); }
-
-    footer { background-color: var(--text-main); color: var(--white); padding: 4rem 0 3rem 0; margin-top: 5rem; }
-
-    .footer-links-row { display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2rem; }
-
-    @media (min-width: 768px) { .footer-links-row { flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 2.5rem; } }
-
-    .social-icons { display: flex; gap: 1.5rem; }
-
-    .social-icons a { color: var(--white); font-size: 1.35rem; transition: color 0.15s ease; }
-
-    .social-icons a:hover { color: var(--brand-orange); }
-
-    .legal-nav { display: flex; flex-direction: row; gap: 1.5rem; align-items: center; flex-wrap: wrap; }
-
-    .legal-nav a { color: var(--white); text-decoration: none; font-family: var(--font-headers); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; transition: color 0.15s ease; }
-
-    .legal-nav a:hover { color: var(--brand-orange); }
-
-    .footer-bottom-brand { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1.5rem; }
-
-    .footer-bottom-brand p { margin: 0; font-size: 0.85rem; color: var(--text-light); }
+    /* Interactive Project Card */
+    .project-link { text-decoration: none; color: inherit; display: block; }
+    .project-card { padding: 1.5rem; border-radius: 8px; transition: all 0.2s ease; margin-bottom: 1rem; }
+    .project-card:hover { background-color: rgba(0,0,0,0.05); border-left: 4px solid var(--brand-orange); }
+    .project-card h3 { font-family: var(--font-headers); margin: 0.5rem 0; font-size: 1.4rem; }
+    .project-card .meta { color: var(--brand-orange); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; }
+    
+    /* Skill Tags */
+    .skills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+    .skill-tag { background: #e0e0e0; color: #444; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; font-family: var(--font-headers); }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="container nav-wrapper">
-      <a href="/" class="logo">Huong Nguyen</a>
-      <nav class="nav-links">
-        <a href="#work">Work</a>
-        <a href="/about/">About</a>
-        <a href="/blogs/">Blogs</a>
-      </nav>
-    </div>
+    <div class="container"><a href="/" class="logo">Huong Nguyen</a></div>
   </header>
 
   <main class="container">
-    
     <div class="hero-wrapper">
-      <div class="hero-text">
-        <h1>Hi, I’m Huong</h1>
-        <p>Software Engineer bridging human-centric design with backend logic. I build systems like I used to build cities: structured for function, but designed for the people who live inside them.</p>
-        
-        <div class="cta-group">
-          <a href="https://www.linkedin.com/in/nguyen-huong" class="btn-dark" target="_blank" rel="noopener">Connect on LinkedIn</a>
-          <a href="https://github.com/huongntn" class="btn-dark" target="_blank" rel="noopener">Explore Codebase</a>
-        </div>
-      </div>
-      <div class="hero-profile">
-        <img src="assets/profile_photo.png" alt="Huong Nguyen" class="profile-circle">
-      </div>
+      <h1>Hi, I’m Huong</h1>
+      <p>Software Engineer bridging human-centric design with backend logic.</p>
     </div>
-
-    <hr>
-
-    <section id="work">
-      <h2>The Blueprint</h2>
-      <p class="chapter-subtitle">My architectural approach: building systems that put human needs first.</p>
-      <div class="article-feed">
-        
-        <article class="article-item">
-          <div class="article-tag">Enterprise Workflow Orchestration</div>
-          <h3>Bridging technical feasibility with human-centric efficiency</h3>
-          <p style="margin-bottom: 0.5rem;">I led the integration of diverse SAP and non-SAP workflows into a unified Fiori interface. My role was to translate complex business requirements into a functional, intuitive app, coordinating backend logic with frontend performance to ensure that 'enterprise scale' didn't mean 'user frustration'.</p>
-          <p><strong>Impact:</strong> Centralized data streams for 12+ workflows, significantly reducing UI context-switching for end-users and providing a blueprint for future Fiori app deployments.</p>
-        </article>
-
-        <article class="article-item">
-          <div class="article-tag">Cross-System Data Migration</div>
-          <h3>Refactoring data chaos into reliable architectural logic</h3>
-          <p style="margin-bottom: 0.5rem;">Tasked with the migration of complex procurement and finance data between legacy systems and SAP, I architected a custom migration engine using VBA and API-driven automation. I replaced manual spreadsheet mapping with a deterministic data-mapping process, ensuring high-integrity transitions for critical financial records.</p>
-          <p><strong>Impact:</strong> Executed the successful migration of complex chart-of-accounts and supplier data for a large-scale fashion retailer, minimizing downtime and human error through robust, repeatable validation scripts.</p>
-        </article>
-
-        <article class="article-item">
-          <div class="article-tag">FI Interface Management</div>
-          <h3>Ensuring data integrity in complex financial environments</h3>
-          <p style="margin-bottom: 0.5rem;">I assisted the SAP taskforce in integrating the Finance module with SAP AIF to provide real-time monitoring of IDoc errors. By standardizing error documentation and streamlining the monitoring process, I helped transition the team from reactive fire-fighting to proactive system maintenance.</p>
-        </article>
-
-      </div>
-    </section>
-
-    <hr>
 
     <section id="toolshed">
       <h2>The Toolshed</h2>
       <p class="chapter-subtitle">My technical core: the lean stack I use to solve enterprise complexity.</p>
-      <div class="article-item" style="max-width: 780px;">
-        <p>I focus on tools that provide high-integrity results without unnecessary overhead. My current kit centers on <strong>Java, Python, and Go</strong> for backend logic, <strong>SAP HANA</strong> for enterprise data orchestration, and <strong>Docker/AWS</strong> for containerized, scalable infrastructure.</p>
-      </div>
-    </section>
 
-    <hr>
+      <a href="https://www.bosch.com" target="_blank" class="project-link">
+        <div class="project-card">
+          <span class="meta">Bosch</span>
+          <h3>SAP Fiori Rollout</h3>
+          <p>Centralized 12+ workflows into a unified interface, reducing context-switching for end-users.</p>
+          <div class="skills">
+            <span class="skill-tag">SAP Fiori</span>
+            <span class="skill-tag">SAP ABAP</span>
+            <span class="skill-tag">S/4HANA</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://fptsoftware.com" target="_blank" class="project-link">
+        <div class="project-card">
+          <span class="meta">FPT Software</span>
+          <h3>Coupa Data Migration</h3>
+          <p>Architected a custom migration engine to automate complex financial data mapping between legacy systems and SAP.</p>
+          <div class="skills">
+            <span class="skill-tag">VBA</span>
+            <span class="skill-tag">REST API</span>
+            <span class="skill-tag">JSON</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.bosch.com" target="_blank" class="project-link">
+        <div class="project-card">
+          <span class="meta">Bosch</span>
+          <h3>FI Interface Management</h3>
+          <p>Integrated Finance modules with SAP AIF for real-time monitoring of IDoc errors and proactive maintenance.</p>
+          <div class="skills">
+            <span class="skill-tag">SAP AIF</span>
+            <span class="skill-tag">SAP NetWeaver</span>
+          </div>
+        </div>
+      </a>
+    </section>
 
     <section id="workshop">
       <h2>The Workshop</h2>
       <p class="chapter-subtitle">My academic research: bridging the gap between theory and real-world logic.</p>
-      <div class="article-item" style="max-width: 780px;">
-        <p>I am currently deep-diving into distributed system consistency models and optimizing low-latency data structures. I believe that understanding the "why" behind the code is the only way to build systems that stand the test of time.</p>
+      <div class="project-card">
+        <p>Currently researching distributed system consistency models and optimizing low-latency data structures.</p>
       </div>
     </section>
-
-    <hr>
 
     <section id="studio">
       <h2>The Studio</h2>
       <p class="chapter-subtitle">My life beyond code: the influences that ground my perspective.</p>
-      <div class="article-item" style="max-width: 780px;">
-        <p>Outside of enterprise architecture, I find my balance in the details of everyday life. Whether it’s perfecting a traditional Maultaschen recipe, exploring the linguistic roots of my new home in Heilbronn, or spending time with my three cats and a dog, these moments ground my perspective.</p>
+      <div class="project-card">
+        <p>Perfecting Maultaschen recipes, exploring linguistics in Heilbronn, and spending time with my pets.</p>
       </div>
     </section>
-
   </main>
-
-  <footer>
-    <div class="container footer-wrapper">
-      
-      <div class="footer-links-row">
-        <div class="social-icons">
-          <a href="https://github.com/huongntn" target="_blank" rel="noopener" aria-label="GitHub Profile">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/nguyen-huong" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-        </div>
-        
-        <nav class="legal-nav">
-          <a href="/impress">Imprint</a>
-          <a href="privacy.html">Privacy Policy</a>
-        </nav>
-      </div>
-      
-      <div class="footer-bottom-brand">
-        <p>&copy; 2026 Thi Ngoc Huong Nguyen</p>
-      </div>
-      
-    </div>
-  </footer>
-
 </body>
 </html>
