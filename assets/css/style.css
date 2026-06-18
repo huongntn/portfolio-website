@@ -73,3 +73,8 @@ footer { background-color: var(--text-main); color: var(--white); padding: 4rem 
   .nav-wrapper { flex-direction: column; gap: 1rem; }
   footer .container > div { flex-direction: column !important; text-align: center; gap: 1.5rem; }
 }
+
+/* Better spacing for paragraphs */
+section p {
+  margin-bottom: 1.5rem;
+}
