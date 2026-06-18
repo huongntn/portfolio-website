@@ -28,9 +28,7 @@
       --font-body: 'Source Serif Pro', serif;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       background-color: var(--background-body);
@@ -43,306 +41,96 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-    }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
 
-    header {
-      background-color: var(--menu-sand); 
-      border-bottom: 1px solid var(--text-main); 
-      padding: 2rem 0;
-    }
+    header { background-color: var(--menu-sand); border-bottom: 1px solid var(--text-main); padding: 2rem 0; }
 
-    .nav-wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+    .nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
 
-    .logo {
-      font-family: var(--font-headers);
-      font-weight: 800;
-      font-size: 1.5rem;
-      color: var(--text-main);
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: -1.5px;
-    }
+    .logo { font-family: var(--font-headers); font-weight: 800; font-size: 1.5rem; color: var(--text-main); text-decoration: none; text-transform: uppercase; letter-spacing: -1.5px; }
 
-    .nav-links a {
-      font-family: var(--font-headers);
-      color: var(--text-main);
-      text-decoration: none;
-      font-weight: 700;
-      text-transform: uppercase;
-      font-size: 0.85rem;
-      margin-left: 1.75rem;
-      letter-spacing: 0.5px;
-    }
+    .nav-links a { font-family: var(--font-headers); color: var(--text-main); text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; margin-left: 1.75rem; letter-spacing: 0.5px; }
 
-    .nav-links a:hover {
-      color: var(--brand-orange);
-    }
+    .nav-links a:hover { color: var(--brand-orange); }
 
-    .hero-wrapper {
-      display: flex;
-      flex-direction: column-reverse;
-      gap: 2rem;
-      padding: 4rem 0;
-      align-items: center;
-    }
+    .hero-wrapper { display: flex; flex-direction: column-reverse; gap: 2rem; padding: 4rem 0; align-items: center; }
 
     @media (min-width: 768px) {
-      .hero-wrapper {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 4rem;
-        padding: 6rem 0 5rem 0;
-      }
+      .hero-wrapper { flex-direction: row; justify-content: space-between; align-items: center; gap: 4rem; padding: 6rem 0 5rem 0; }
     }
 
-    .hero-text {
-      flex: 1;
-      width: 100%;
-    }
+    .hero-text { flex: 1; width: 100%; }
 
-    .hero-profile {
-      flex-shrink: 0;
-      width: 280px;
-      height: 280px;
-    }
+    .hero-profile { flex-shrink: 0; width: 280px; height: 280px; }
 
-    @media (min-width: 768px) {
-      .hero-profile {
-        width: 340px;
-        height: 340px;
-      }
-    }
+    @media (min-width: 768px) { .hero-profile { width: 340px; height: 340px; } }
 
-    .profile-circle {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      object-fit: cover;
-      display: block;
-    }
+    .profile-circle { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; }
 
-    h1 {
-      font-family: var(--font-headers);
-      font-weight: 800;
-      font-size: 2.5rem;
-      line-height: 1.1;
-      margin: 0 0 1.5rem 0;
-      letter-spacing: -1.5px;
-    }
+    h1 { font-family: var(--font-headers); font-weight: 800; font-size: 2.5rem; line-height: 1.1; margin: 0 0 1.5rem 0; letter-spacing: -1.5px; }
 
-    @media (min-width: 680px) {
-      h1 { font-size: 3.75rem; }
-    }
+    @media (min-width: 680px) { h1 { font-size: 3.75rem; } }
 
-    .hero-text p {
-      font-size: 1.25rem;
-      margin: 0 0 2rem 0;
-      color: var(--text-main);
-    }
+    .hero-text p { font-size: 1.25rem; margin: 0 0 2rem 0; color: var(--text-main); }
 
-    .cta-group {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      width: 100%;
-    }
+    .cta-group { display: flex; flex-direction: column; gap: 1rem; width: 100%; }
 
-    @media (min-width: 480px) {
-      .cta-group {
-        flex-direction: row;
-        align-items: center;
-      }
-    }
+    @media (min-width: 480px) { .cta-group { flex-direction: row; align-items: center; } }
 
-    .btn-dark {
-      font-family: var(--font-headers);
-      font-weight: 700;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: var(--white);
-      background-color: var(--text-main);
-      text-decoration: none;
-      padding: 0.95rem 1.5rem;
-      border-radius: 30px;
-      transition: background-color 0.15s ease;
-      text-align: center;
-      display: inline-block;
-    }
+    .btn-dark { font-family: var(--font-headers); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--white); background-color: var(--text-main); text-decoration: none; padding: 0.95rem 1.5rem; border-radius: 30px; transition: background-color 0.15s ease; text-align: center; display: inline-block; }
 
-    @media (min-width: 480px) {
-      .btn-dark {
-        flex: 1;
-        max-width: 240px;
-      }
-    }
+    @media (min-width: 480px) { .btn-dark { flex: 1; max-width: 240px; } }
 
-    .btn-dark:hover {
-      background-color: var(--brand-orange);
-    }
+    .btn-dark:hover { background-color: var(--brand-orange); }
 
-    section {
-      padding: 4rem 0;
-    }
+    section { padding: 4rem 0; }
 
-    h2 {
-      font-family: var(--font-headers);
-      font-size: 1.75rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: -1px;
-      margin: 0 0 1rem 0;
-    }
+    h2 { font-family: var(--font-headers); font-size: 1.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: -1px; margin: 0 0 0.25rem 0; }
 
-    @media (min-width: 680px) {
-      h2 { font-size: 2.25rem; }
-    }
+    /* Grouped subtitle style */
+    .chapter-subtitle { font-family: var(--font-body); font-style: italic; color: var(--text-light); margin: 0 0 2.5rem 0; font-size: 1.25rem; }
 
-    hr {
-      border: none;
-      border-top: 1px solid var(--text-main);
-      margin: 0;
-    }
+    @media (min-width: 680px) { h2 { font-size: 2.25rem; } }
 
-    .article-feed {
-      display: flex;
-      flex-direction: column;
-      gap: 3.5rem;
-    }
+    hr { border: none; border-top: 1px solid var(--text-main); margin: 0; }
 
-    .article-item {
-      max-width: 780px;
-    }
+    .article-feed { display: flex; flex-direction: column; gap: 3.5rem; }
 
-    .article-tag {
-      font-family: var(--font-headers);
-      font-size: 0.8rem;
-      color: var(--brand-orange);
-      text-transform: uppercase;
-      font-weight: 800;
-      margin-bottom: 0.5rem;
-      letter-spacing: 1px;
-    }
+    .article-item { max-width: 780px; }
 
-    .article-item h3 {
-      font-family: var(--font-headers);
-      font-size: 1.6rem;
-      font-weight: 700;
-      margin: 0 0 0.85rem 0;
-      line-height: 1.2;
-      letter-spacing: -0.5px;
-    }
+    .article-tag { font-family: var(--font-headers); font-size: 0.8rem; color: var(--brand-orange); text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem; letter-spacing: 1px; }
 
-    @media (min-width: 680px) {
-      .article-item h3 { font-size: 2rem; }
-    }
+    .article-item h3 { font-family: var(--font-headers); font-size: 1.6rem; font-weight: 700; margin: 0 0 0.85rem 0; line-height: 1.2; letter-spacing: -0.5px; }
 
-    .article-item h3 a {
-      color: var(--text-main);
-      text-decoration: none;
-      box-shadow: inset 0 -2px 0 var(--text-light);
-      transition: box-shadow 0.15s, color 0.15s;
-    }
+    @media (min-width: 680px) { .article-item h3 { font-size: 2rem; } }
 
-    .article-item h3 a:hover {
-      color: var(--brand-orange);
-      box-shadow: inset 0 -2px 0 var(--brand-orange);
-    }
+    .article-item h3 a { color: var(--text-main); text-decoration: none; box-shadow: inset 0 -2px 0 var(--text-light); transition: box-shadow 0.15s, color 0.15s; }
 
-    .article-item p {
-      margin: 0;
-      color: var(--text-main);
-    }
+    .article-item h3 a:hover { color: var(--brand-orange); box-shadow: inset 0 -2px 0 var(--brand-orange); }
 
-    footer {
-      background-color: var(--text-main);
-      color: var(--white);
-      padding: 4rem 0 3rem 0;
-      margin-top: 5rem;
-    }
+    .article-item p { margin: 0; color: var(--text-main); }
 
-    .footer-links-row {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      margin-bottom: 2rem;
-    }
+    footer { background-color: var(--text-main); color: var(--white); padding: 4rem 0 3rem 0; margin-top: 5rem; }
 
-    @media (min-width: 768px) {
-      .footer-links-row {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 2.5rem;
-      }
-    }
+    .footer-links-row { display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2rem; }
 
-    .social-icons {
-      display: flex;
-      gap: 1.5rem;
-    }
+    @media (min-width: 768px) { .footer-links-row { flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 2.5rem; } }
 
-    .social-icons a {
-      color: var(--white);
-      font-size: 1.35rem;
-      transition: color 0.15s ease;
-    }
+    .social-icons { display: flex; gap: 1.5rem; }
 
-    .social-icons a:hover {
-      color: var(--brand-orange);
-    }
+    .social-icons a { color: var(--white); font-size: 1.35rem; transition: color 0.15s ease; }
 
-    .legal-nav {
-      display: flex;
-      flex-direction: row; 
-      gap: 1.5rem;
-      align-items: center;
-      flex-wrap: wrap; 
-    }
+    .social-icons a:hover { color: var(--brand-orange); }
 
-    .legal-nav a {
-      color: var(--white);
-      text-decoration: none;
-      font-family: var(--font-headers);
-      font-weight: 700;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      transition: color 0.15s ease;
-    }
+    .legal-nav { display: flex; flex-direction: row; gap: 1.5rem; align-items: center; flex-wrap: wrap; }
 
-    .legal-nav a:hover {
-      color: var(--brand-orange);
-    }
+    .legal-nav a { color: var(--white); text-decoration: none; font-family: var(--font-headers); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; transition: color 0.15s ease; }
 
-    .footer-bottom-brand {
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      padding-top: 1.5rem;
-    }
+    .legal-nav a:hover { color: var(--brand-orange); }
 
-    .footer-bottom-brand h5 {
-      font-family: var(--font-headers);
-      font-weight: 800;
-      font-size: 1.05rem;
-      margin: 0 0 0.4rem 0;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
+    .footer-bottom-brand { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1.5rem; }
 
-    .footer-bottom-brand p {
-      margin: 0;
-      font-size: 0.85rem;
-      color: var(--text-light);
-    }
+    .footer-bottom-brand p { margin: 0; font-size: 0.85rem; color: var(--text-light); }
   </style>
 </head>
 <body>
@@ -377,10 +165,9 @@
 
     <hr>
 
-    <!-- The Blueprint -->
     <section id="work">
       <h2>The Blueprint</h2>
-      <p style="margin-bottom: 2rem; font-size: 1.25rem;">Designing structures meant to serve the people using them.</p>
+      <p class="chapter-subtitle">My architectural approach: building systems that put human needs first.</p>
       <div class="article-feed">
         <div class="article-item">
           <div class="article-tag">Data Infrastructure</div>
@@ -397,10 +184,9 @@
 
     <hr>
 
-    <!-- The Toolshed -->
     <section id="toolshed">
       <h2>The Toolshed</h2>
-      <p style="margin-bottom: 2rem; font-size: 1.25rem;">Keeping my technical kit simple, functional, and efficient.</p>
+      <p class="chapter-subtitle">My technical core: the lean stack I use to solve enterprise complexity.</p>
       <div class="article-item" style="max-width: 780px;">
         <p>I focus on tools that provide high-integrity results without unnecessary overhead. My current kit centers on <strong>Java, Python, and Go</strong> for backend logic, <strong>SAP HANA</strong> for enterprise data orchestration, and <strong>Docker/AWS</strong> for containerized, scalable infrastructure.</p>
       </div>
@@ -408,10 +194,9 @@
 
     <hr>
 
-    <!-- The Workshop -->
     <section id="workshop">
       <h2>The Workshop</h2>
-      <p style="margin-bottom: 2rem; font-size: 1.25rem;">Learning how to do things better, one theory at a time.</p>
+      <p class="chapter-subtitle">My academic research: bridging the gap between theory and real-world logic.</p>
       <div class="article-item" style="max-width: 780px;">
         <p>I am currently deep-diving into distributed system consistency models and optimizing low-latency data structures. I believe that understanding the "why" behind the code is the only way to build systems that stand the test of time.</p>
       </div>
@@ -419,10 +204,9 @@
 
     <hr>
 
-    <!-- The Studio -->
     <section id="studio">
       <h2>The Studio</h2>
-      <p style="margin-bottom: 2rem; font-size: 1.25rem;">Making space for the things that keep me human—from pets to local recipes.</p>
+      <p class="chapter-subtitle">My life beyond code: the influences that ground my perspective.</p>
       <div class="article-item" style="max-width: 780px;">
         <p>Outside of enterprise architecture, I find my balance in the details of everyday life. Whether it’s perfecting a traditional Maultaschen recipe, exploring the linguistic roots of my new home in Heilbronn, or spending time with my three cats and a dog, these moments ground my perspective.</p>
       </div>
