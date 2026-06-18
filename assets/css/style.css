@@ -69,12 +69,19 @@ footer { background-color: var(--text-main); color: var(--white); padding: 4rem 
 
 /* --- Mobile Optimization --- */
 @media (max-width: 768px) {
-  .hero-wrapper { flex-direction: column-reverse; text-align: center; gap: 2rem; padding: 3rem 0; }
+  /* Profile photo on top, text below */
+  .hero-wrapper { flex-direction: column; text-align: center; gap: 2rem; padding: 3rem 0; }
   h1 { font-size: 2.5rem; }
+  
+  /* Buttons stack vertically and maintain round edges/size */
+  .btn-dark { 
+    width: 220px; 
+    margin: 0.5rem auto; 
+    display: flex;
+    flex-direction: column;
+  }
+  
   .nav-wrapper { flex-direction: column; gap: 1rem; }
   .nav-links a { margin-left: 0.8rem; margin-right: 0.8rem; }
   footer .container > div { flex-direction: column !important; text-align: center; gap: 1.5rem; }
-  
-  /* Buttons full-width on mobile */
-  .btn-dark { width: 100%; margin-right: 0; margin-bottom: 1rem; }
 }
