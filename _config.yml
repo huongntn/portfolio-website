@@ -1,11 +1,11 @@
 # Site Settings
 title: "Huong Nguyen"
 description: "Portfolio Website"
-url: "https://github.com/huongntn/portfolio-website
+url: "https://github.com/huongntn/portfolio-website"
 
 # Jekyll Settings
 theme: null 
-permalink: /about/
+permalink: pretty
 markdown: kramdown 
 
 # Exclude files from the build process
