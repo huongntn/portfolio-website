@@ -1,19 +1,19 @@
 <style>
   /* Header specific CSS */
-  header { background-color: var(--menu-sand); border-bottom: 1px solid var(--text-main); padding: 2rem 0; }
+  header { background-color: var(--menu-sand, #f4e8d3); border-bottom: 1px solid var(--text-main, #333); padding: 2rem 0; }
   .nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
-  .logo { font-family: var(--font-headers); font-weight: 800; font-size: 1.5rem; color: var(--text-main); text-decoration: none; text-transform: uppercase; letter-spacing: -1.5px; }
-  .nav-links a { font-family: var(--font-headers); color: var(--text-main); text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; margin-left: 1.75rem; transition: color 0.15s; }
-  .nav-links a:hover { color: var(--brand-orange); }
+  .logo { font-family: var(--font-headers, sans-serif); font-weight: 800; font-size: 1.5rem; color: var(--text-main, #333); text-decoration: none; text-transform: uppercase; letter-spacing: -1.5px; }
+  .nav-links a { font-family: var(--font-headers, sans-serif); color: var(--text-main, #333); text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; margin-left: 1.75rem; transition: color 0.15s; }
+  .nav-links a:hover { color: var(--brand-orange, #ff9900); }
 </style>
 
 <header>
   <div class="container nav-wrapper">
-    <a href="/" class="logo">Huong Nguyen</a>
+    <a href="{{ '/' | relative_url }}" class="logo">Huong Nguyen</a>
     <nav class="nav-links">
-      <a href="/about/">About</a>
-      <a href="/#toolshed">Work</a>
-      <a href="/blogs/">Blogs</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/#toolshed' | relative_url }}">Work</a>
+      <a href="{{ '/blogs/' | relative_url }}">Blogs</a>
     </nav>
   </div>
 </header>
