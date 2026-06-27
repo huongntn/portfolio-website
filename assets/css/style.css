@@ -33,16 +33,11 @@ header { background-color: var(--menu-sand); border-bottom: 1px solid var(--text
 /* Hero Section */
 .hero-container { display: flex; flex-direction: column; padding: 6rem 0; }
 .hero-wrapper { display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 4rem; margin-bottom: 2rem; }
-.hero-text { flex: 1; text-align: left; }
-.hero-buttons { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; justify-content: flex-start; }
+.hero-text { flex: 1; text-align: left; min-width: 0 }
+.hero-buttons { display: flex; flex-direction: row; flex-wrap: nowrap; gap: 1rem; margin-top: 2rem; justify-content: flex-start; width: 100%; }
 h1 { font-family: var(--font-headers); font-weight: 800; font-size: 3.75rem; margin: 0 0 1.5rem 0; }
 
-.btn-dark { 
-  display: flex; flex-wrap: wrap; gap: 1rem; justify-content: flex-start; align-items: center; width: auto;
-  font-family: var(--font-headers); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; 
-  color: var(--white); background-color: var(--text-main); text-decoration: none; padding: 0.95rem 1.5rem; 
-  border-radius: 30px; margin-top: 2rem; margin-right: 0 !important; transition: all 0.2s ease; text-align: center;
-}
+.btn-dark { display: inline-flex; justify-content: center; align-items: center; font-family: var(--font-headers); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; color: var(--white); background-color: var(--text-main); text-decoration: none; padding: 0.95rem 1.5rem; border-radius: 30px; white-space: nowrap; flex-shrink: 0; transition: all 0.2s ease; }
 .btn-dark:hover { background-color: var(--brand-orange); }
 
 /* Sections & Typography */
