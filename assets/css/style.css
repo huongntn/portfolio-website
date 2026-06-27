@@ -31,14 +31,16 @@ header { background-color: var(--menu-sand); border-bottom: 1px solid var(--text
 .nav-links a:hover { color: var(--brand-orange); }
 
 /* Hero Section */
-.hero-wrapper { display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 4rem; padding: 6rem 0; }
+.hero-container { display: flex; flex-direction: column; padding: 6rem 0; }
+.hero-wrapper { display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 4rem; margin-bottom: 2rem; }
+.hero-buttons { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; }
 h1 { font-family: var(--font-headers); font-weight: 800; font-size: 3.75rem; margin: 0 0 1.5rem 0; }
 
 .btn-dark { 
   display: inline-flex; justify-content: center; align-items: center; width: 220px;
   font-family: var(--font-headers); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; 
   color: var(--white); background-color: var(--text-main); text-decoration: none; padding: 0.95rem 1.5rem; 
-  border-radius: 30px; margin-right: 1rem; transition: all 0.2s ease; text-align: center;
+  border-radius: 30px; margin-right: 0 !important; transition: all 0.2s ease; text-align: center;
 }
 .btn-dark:hover { background-color: var(--brand-orange); }
 
@@ -50,14 +52,7 @@ hr { border: none; border-top: 1px solid var(--text-main); margin: 0; }
 
 /* About Page Specific Image */
 .about-header { text-align: center; margin-top: 3rem; margin-bottom: 2rem; }
-.about-img-rect {
-  width: 100%;
-  max-width: 960px;
-  height: auto;
-  border-radius: 12px;
-  display: block;
-  margin: 2rem auto;
-}
+.about-img-rect { width: 100%; max-width: 960px; height: auto; border-radius: 12px; display: block; margin: 2rem auto; }
 
 /* Toolshed / Project Cards */
 .project-link { text-decoration: none; color: inherit; display: block; margin-bottom: 1rem; }
@@ -86,7 +81,8 @@ footer { background-color: var(--text-main); color: var(--white); padding: 4rem 
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  .hero-wrapper { display: flex !important; flex-direction: column !important; text-align: center !important; padding: 3rem 0 !important; }
+  .hero-wrapper { display: flex !important; flex-direction: column !important; text-align: center !important; padding: 0 !important; }
+  .hero-buttons { flex-direction: column !important; align-items: center !important; }
   .hero-profile { order: -1 !important; } 
   h1 { font-size: 2.5rem !important; }
   .hero-text { display: flex; flex-direction: column; align-items: center; }
