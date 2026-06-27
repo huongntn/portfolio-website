@@ -34,6 +34,8 @@ header { background-color: var(--menu-sand); border-bottom: 1px solid var(--text
 .hero-container { display: flex; flex-direction: column; padding: 6rem 0; }
 .hero-wrapper { display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 4rem; }
 .hero-text { flex: 1; text-align: left; }
+.hero-title { width: 100%; text-align: center; }
+.hero-title h1 { display: block; }
 .hero-buttons { display: flex; flex-direction: row; flex-wrap: nowrap; gap: 1rem; margin-top: 2rem; justify-content: center; width: 100% }
 h1 { font-family: var(--font-headers); font-weight: 800; font-size: 3.75rem; margin: 0 0 1.5rem 0; }
 
