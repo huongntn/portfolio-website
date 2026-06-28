@@ -91,7 +91,7 @@ hr { border: none; border-top: 1px solid var(--text-main); margin: 0; }
 .tab-button.active { border-left: 2px solid var(--brand-orange, #f37021); color: var(--brand-orange, #f37021); background-color: #f9f9f9; }
 
 /* Content area */
-.tab-content { display: none; flex-direction: column; gap: 1rem; }
+.tab-content { display: none; flex-direction: column; gap: 2rem; }
 .tab-content.active { display: flex; }
 
 /* Footer */
