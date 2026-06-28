@@ -56,16 +56,24 @@ hr { border: none; border-top: 1px solid var(--text-main); margin: 0; }
 .impact { display: block; margin-top: 0.8rem; font-weight: 600; }
 .project-date { font-family: var(--font-headers); font-size: 0.8rem; color: var(--text-light); min-width: 140px; font-weight: 700; }
 
-.archive-link { display: inline-flex; align-items: center; font-family: var(--font-headers); font-weight: 700; text-transform: uppercase; font-size: 0.9rem; color: var(--text-main); text-decoration: none; margin-left: 0.5rem; margin-top: 1rem; transition: all 0.2s ease }
+.archive-link, .back-home { display: inline-flex; align-items: center; font-family: var(--font-headers); font-weight: 700; text-transform: uppercase; font-size: 0.9rem; color: var(--text-main); text-decoration: none; margin-left: 0.5rem; margin-top: 1rem; transition: all 0.2s ease }
 .archive-link:hover { color: var(--brand-orange); }
 .archive-link .arrow { margin-left: 0.5rem; transition: transform 0.2s ease; }
 .archive-link:hover .arrow { transform: translateX(5px); }
+.back-home:hover { transform: translateX(-5px); }
 
 .skill-tag { 
   background: transparent; border: 1px solid var(--text-main); color: var(--text-main); 
   padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.75rem; font-family: var(--font-headers); 
   font-weight: 700; margin-right: 0.5rem; display: inline-block; margin-top: 0.8rem; transition: all 0.2s ease;
 }
+
+/* Archive All Projects Page */
+.archive-page-container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
+.company-link { display: inline-flex; align-items: center; text-decoration: none; color: var(--text-light); transition: color 0.2s ease; margin-bottom: 0.5rem; cursor: pointer; }
+.company-link:hover { color: var(--brand-orange); }
+.arrow-up { margin-left: 0.5rem; display: inline-block; transition: transform 0.2s ease; }
+.company-link:hover .arrow-up { transform: translateY(-5px); }
 
 /* Footer */
 footer { background-color: var(--text-main); color: var(--white); padding: 4rem 0 3rem 0; margin-top: 5rem; }
