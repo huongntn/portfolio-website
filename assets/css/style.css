@@ -107,7 +107,7 @@ footer { background-color: var(--text-main); color: var(--white); padding: 4rem 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   /* Hide the desktop nav links */
-  .nav-links { display: none; flex-direction: column; position: absolute; top: 60px; right: 20px; background: #fdf5f0; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+  .nav-links { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: #fdf5f0; padding: 20px 0; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
 
   /* Show links when active */
   .nav-links.active { display: flex; }
