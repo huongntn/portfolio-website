@@ -1,8 +1,13 @@
 <header>
   <div class="container nav-wrapper">
     <a href="{{ '/' | relative_url }}" class="logo">
-      <img src="{{ 'assets/photos/favicon.svg' | relative_url }}" alt="favicon" style="height: 40px; width: auto;">
+      <img src="{{ 'assets/photos/favicon.svg' | relative_url }}" alt="logo" style="height: 40px; width: auto;">
     </a>
+    
+    <div class="burger-menu" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+      ☰
+    </div>
+    
     <nav class="nav-links">
       <a href="{{ '/about/' | relative_url }}">About</a>
       <a href="{{ '/#toolshed' | relative_url }}">Experience</a>
