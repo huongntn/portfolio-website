@@ -18,8 +18,8 @@ body { background-color: var(--background-body); color: var(--text-main); font-f
 /* Header & Nav */
 header { background-color: var(--menu-sand); border-bottom: 1px solid var(--text-main); padding: 0; position: fixed; top: 0; width: 100%; z-index: 1000; height: 60px; }
 .nav-wrapper { display: flex; justify-content: space-between; align-items: center; height: 100%; padding: 0 1.5rem; }
-.logo { font-family: var(--font-headers); font-weight: 800; font-size: 1.5rem; color: var(--text-main); text-decoration: none; text-transform: uppercase; letter-spacing: -1.5px; }
-.logo img { height: 35px; width: auto; }
+.logo { display: flex; align-items: center; font-family: var(--font-headers); font-weight: 800; font-size: 1.5rem; color: var(--text-main); text-decoration: none; text-transform: uppercase; letter-spacing: -1.5px; }
+.logo img { height: 40px; width: auto; display: block; }
 .nav-links { display: flex; gap: 20px; z-index: 999; }
 .nav-links a { font-family: var(--font-headers); color: var(--text-main); text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; margin-left: 1.75rem; transition: color 0.15s; }
 .nav-links a:hover { color: var(--brand-orange); }
