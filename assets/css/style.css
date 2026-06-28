@@ -16,7 +16,7 @@ body { background-color: var(--background-body); color: var(--text-main); font-f
 .container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
 
 /* Header & Nav */
-header { background-color: var(--menu-sand); border-bottom: 1px solid var(--text-main); padding: 2rem 0; }
+header { background-color: var(--menu-sand); border-bottom: 1px solid var(--text-main); padding: 2rem 0; position: fixed; top: 0; width: 100%; z-index: 1000; }
 .nav-wrapper { display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; }
 .logo { font-family: var(--font-headers); font-weight: 800; font-size: 1.5rem; color: var(--text-main); text-decoration: none; text-transform: uppercase; letter-spacing: -1.5px; }
 .logo img { height: 35px; width: auto; }
@@ -108,11 +108,7 @@ footer { background-color: var(--text-main); color: var(--white); padding: 4rem 
 @media (max-width: 768px) {
   /* Hide the desktop nav links */
   .nav-links { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: #fdf5f0; padding: 20px 0; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-
-  /* Show links when active */
   .nav-links.active { display: flex; }
-  
-  /* Show the burger icon */
   .burger-menu { display: block; font-size: 24px; cursor: pointer; }
 
   section { padding: 1.5rem 0; }
