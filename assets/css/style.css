@@ -73,7 +73,7 @@ hr { border: none; border-top: 1px solid var(--text-main); margin: 0; }
 .archive-page-container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
 .archive-project-card { background-color: #f3f2ef; padding: 1.5rem; border-radius: 8px; border: 1px solid #e0e0e0; margin-bottom: 2rem; }
 .project-content h3 { font-family: var(--font-headers); font-size: 1.4rem; margin: 0.5rem 0; color: var(--text-main); }
-.company-link { display: inline-flex; align-items: center; text-decoration: none; color: var(--text-light); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; transition: color 0.2s ease; cursor: pointer; }
+.company-link { display: inline-flex; align-items: center; text-decoration: none; color: var(--text-light); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; transition: color 0.2s ease; margin-bottom: 0.5rem; }
 .company-link:hover { color: var(--brand-orange); }
 .arrow-up { margin-left: 0.5rem; display: inline-block; transition: transform 0.2s ease; }
 .company-link:hover .arrow-up { transform: translateY(-5px); }
