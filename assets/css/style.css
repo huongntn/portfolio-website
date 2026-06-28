@@ -82,6 +82,18 @@ hr { border: none; border-top: 1px solid var(--text-main); margin: 0; }
 .tag-container { margin: 1rem 0; }
 .static-tag { display: inline-block; background: var(--brand-orange); color: var(--white); padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.75rem; font-family: var(--font-headers); font-weight: 700; margin-right: 0.5rem; margin-top: 0.8rem; }
 
+/* Container for the side-by-side layout */
+.projects-tabs { display: grid; grid-template-columns: 200px 1fr; gap: 3rem; margin-top: 2rem; align-items: start; }
+
+/* Sidebar navigation */
+.tab-list { list-style: none; padding: 0; border-left: 2px solid #e0e0e0; }
+.tab-button { padding: 1rem; cursor: pointer; transition: all 0.2s ease; color: #666; font-weight: 500; }
+.tab-button.active { border-left: 2px solid var(--brand-orange, #f37021); color: var(--brand-orange, #f37021); background-color: #f9f9f9; }
+
+/* Content area */
+.tab-content { display: none; flex-direction: column; gap: 2rem; }
+.tab-content.active { display: flex; }
+
 /* Footer */
 footer { background-color: var(--text-main); color: var(--white); padding: 4rem 0 3rem 0; margin-top: 5rem; }
 .social-icons a { color: var(--white); font-size: 1.5rem; margin-right: 1.5rem; transition: color 0.15s; }
@@ -112,5 +124,8 @@ footer { background-color: var(--text-main); color: var(--white); padding: 4rem 
   .archive-project-card { grid-template-columns: 1fr; gap: 0.5rem; padding: 1rem; }
   .archive-project-card .project-date { margin-bottom: 0.5rem; }
   .archive-project-card h3 { margin: 0.25rem 0; }
-  .company-link { text-transform: none; }
+  .projects-tabs { grid-template-columns: 1fr; gap: 1rem; }
+  .tab-list { display: flex; overflow-x: auto; border-left: none; border-bottom: 2px solid #e0e0e0; margin-bottom: 1rem; }
+  .tab-button { white-space: nowrap; border-left: none; border-bottom: 2px solid transparent; }
+  .tab-button.active { border-left: none; border-bottom: 2px solid var(--brand-orange, #f37021); }
 }
