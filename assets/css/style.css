@@ -60,7 +60,7 @@ hr { border: none; border-top: 1px solid var(--text-main); margin: 0; }
 .archive-link:hover, back-home:hover { color: var(--brand-orange); }
 .archive-link .arrow { margin-left: 0.5rem; transition: transform 0.2s ease; display: inline-block; }
 .archive-link:hover .arrow { transform: translateX(5px); }
-.back-home .arrow-left { margin-right: 0.5rem; transition: transform 0.2s ease; display: inline-block; }
+.back-home .arrow-left { margin-right: 0.8rem; transition: transform 0.2s ease; display: inline-block; }
 .back-home:hover .arrow-left { transform: translateX(-5px); }
 
 .skill-tag { 
