@@ -11,7 +11,7 @@
 
 * { box-sizing: border-box; }
 
-body { background-color: var(--background-body); color: var(--text-main); font-family: var(--font-body); font-size: 1.15rem; line-height: 1.65; margin: 0; padding: 0; }
+body { background-color: var(--background-body); color: var(--text-main); font-family: var(--font-body); font-size: 1.15rem; line-height: 1.65; margin: 0; padding: 80px 0 0 0; }
 
 .container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
 
@@ -107,9 +107,10 @@ footer { background-color: var(--text-main); color: var(--white); padding: 4rem 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   /* Hide the desktop nav links */
-  .nav-links { flex-direction: row; justify-content: space-between; padding: 10px 20px; }
+  .nav-wrapper { flex-direction: row !important; justify-content: space-between !important; }
+  .nav-links { display: none; flex-direction: column; position: absolute; top: 60px; right: 20px; width: auto; background: var(--menu-sand); padding: 20px; text-align: right; align-items: flex-end; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
   .nav-links.active { display: flex; }
-  .burger-menu { display: block; font-size: 24px; cursor: pointer; }
+  .burger-menu { display: block; font-size: 30px; cursor: pointer; }
 
   section { padding: 1.5rem 0; }
   h2 { font-size: 1.75rem; margin: 0 0 0.5rem 0; }
