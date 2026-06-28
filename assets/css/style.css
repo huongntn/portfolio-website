@@ -61,8 +61,7 @@ hr { border: none; border-top: 1px solid var(--text-main); margin: 0; }
 .archive-link .arrow { margin-left: 0.5rem; transition: transform 0.2s ease; }
 .archive-link:hover .arrow { transform: translateX(5px); }
 .back-home:hover { color: var(--brand-orange); }
-.back-home .arrow { margin-left: 0.5rem; transition: transform 0.2s ease; }
-.back-home:hover .arrow { transform: translateX(-5px); }
+.back-home:hover .arrow-left { transform: translateX(-5px); }
 
 .skill-tag { 
   background: transparent; border: 1px solid var(--text-main); color: var(--text-main); 
