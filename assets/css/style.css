@@ -51,11 +51,15 @@ hr { border: none; border-top: 1px solid var(--text-main); margin: 0; }
 .project-card:hover .card-box { background-color: #edece9; border-color: #d1d0ce; }
 .project-card:hover h3 { color: var(--brand-orange); }
 .project-card:hover .skill-tag { background: var(--brand-orange); border-color: var(--brand-orange); color: var(--white); }
-
 .project-card h3 { font-family: var(--font-headers); font-size: 1.4rem; margin: 0.5rem 0; transition: color 0.2s; }
 .project-meta { color: var(--brand-orange); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; }
 .impact { display: block; margin-top: 0.8rem; font-weight: 600; }
 .project-date { font-family: var(--font-headers); font-size: 0.8rem; color: var(--text-light); min-width: 140px; font-weight: 700; }
+
+.archive-link { display: inline-flex; align-items: center; font-family: var(--font-headers); font-weight: 700; text-transform: uppercase; font-size: 0.9rem; color: var(--text-main); text-decoration: none; margin-top: 1rem; transition: color 0.2s ease }
+.archive-link:hover { color: var(--brand-orange); }
+.archive-link .arrow { margin-left: 0.5rem; transition: transform 0.2s ease; }
+.archive-link:hover .arrow { transform: translateX(5px); }
 
 .skill-tag { 
   background: transparent; border: 1px solid var(--text-main); color: var(--text-main); 
