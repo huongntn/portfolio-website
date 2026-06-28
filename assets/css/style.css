@@ -21,7 +21,7 @@ header { background-color: var(--menu-sand); border-bottom: 1px solid var(--text
 .header-left-group { display: flex; align-items: center; gap: 20px; }
 .logo { display: flex; align-items: center; font-family: var(--font-headers); font-weight: 800; font-size: 1.5rem; color: var(--text-main); text-decoration: none; text-transform: uppercase; letter-spacing: -1.5px; }
 .logo img { height: 40px; width: auto; display: block; }
-.social-icons { display: flex; gap: 15px; align-items: center; margin-left: 15px; }
+.social-icons { display: flex; gap: 15px; align-items: center; margin-left: 15px; position: relative; z-index: 1005; }
 .social-icons a { text-decoration: none !important; color: var(--text-main); font-size: 1.2rem; transition: color 0.15s; display: flex; align-items: center; }
 .social-icons a:hover { color: var(--brand-orange) !important; text-decoration: none !important; }
 .nav-links { display: flex; gap: 20px; z-index: 999; }
