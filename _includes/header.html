@@ -4,7 +4,7 @@
       <img src="{{ 'assets/photos/favicon.svg' | relative_url }}" alt="logo" style="height: 40px; width: auto;">
     </a>
     
-    <div class="burger-menu" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+    <div class="burger-menu" onclick="toggleMenu()">
       ☰
     </div>
     
@@ -17,3 +17,10 @@
     </nav>
   </div>
 </header>
+
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  }
+</script>
