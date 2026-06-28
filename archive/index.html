@@ -11,6 +11,7 @@ title: All Projects
 <div class="projects-tabs">
    <!-- Navigation Sidebar -->
    <ul class="tab-list">
+      <li class="tab-button active" data-target="schwarz">Schwarz Digits</li>
       <li class="tab-button active" data-target="bosch">Bosch</li>
       <li class="tab-button" data-target="fpt">FPT Software</li>
       <li class="tab-button" data-target="lhh">LHH Vietnam</li>
@@ -18,6 +19,50 @@ title: All Projects
    </ul>
    <!-- Content Panels -->
    <div class="tab-content-container">
+      <!-- Schwarz Digits -->
+      <div id="schwarz" class="tab-content active">
+         <!-- Project 8 -->
+         <div class="archive-project-card">
+            <div class="project-content">
+               <div class="project-date">01/2026 — 05/2026</div>
+               <a href="https://schwarz-digits.de/" target="_blank" class="company-link">
+               <span class="company-link">Master Thesis Student, SAP HR Core Solution Development • Schwarz Digits</span>
+               <span class="arrow">→</span>
+               </a>
+               <h3>SAP Clean Core Principles: Compliance Assessment and Transformation Blueprint for SAP HCM at Schwarz Digits</h3>
+               <p><em>The Challenge:</em> The SAP HCM landscape at Schwarz Digits was hindered by extensive custom legacy code, which caused high maintenance demands, strong architectural coupling, and increased upgrade risks. Because general <a href="https://www.sap.com/resources/what-is-a-clean-core" target="_blank" rel="noopener noreferrer" class="atingi-link">Clean Core</a> guidelines did not sufficiently address the specific technical complexities of payroll and infotype structures, the organization lacked the necessary framework to assess and prioritize system modernization. Consequently, there was a critical need for a structured classification system and a formal transformation blueprint to guide the long-term stabilization of the core environment.</p>
+               <p><em>My Approach:</em> I developed a structured assessment framework based on Design Science Research to modernize the SAP HCM landscape. My approach involved analyzing all transport records from 2023 to 2025 to verify that the 2,928 audited objects represented active, evolving code rather than dead code, as higher change frequency directly correlates to increased risk and technical debt. To ensure a balanced methodology, I integrated SAP-specific extensibility KPIs with McCabe’s cyclomatic complexity metrics to quantify technical debt and architectural risk. Finally, I created a transformation blueprint that provided clear, actionable strategies to refactor, re-platform, or retire legacy code, ensuring long-term system stability.</p>
+               <p><em>The Impact:</em> The research provided a repeatable, data-driven framework for modernizing complex SAP environments. By filtering for active objects through a three-year transport analysis, the study helped the organization isolate and prioritize high-risk technical debt, shifting focus away from irrelevant dead code toward areas that actually impact system stability. The integration of SAP-specific extensibility KPIs and academic complexity metrics allowed for a more precise classification of custom objects, enabling the business to make informed decisions on whether to refactor, re-platform, or retire specific components. Ultimately, this transformation blueprint served as a practical governance tool, reducing long-term upgrade risks and establishing a clearer path toward a cleaner, more maintainable SAP HCM architecture.</p>
+               <div class="tag-container">
+                  <span class="static-tag">SAP ABAP</span>
+                  <span class="static-tag">SAP S/4HANA</span>
+                  <span class="static-tag">SAP HCM</span>
+                  <span class="static-tag">Clean Core</span>
+               </div>
+            </div>
+         </div>
+         <!-- Project 7 -->
+         <div class="archive-project-card">
+            <div class="project-content">
+               <div class="project-date">03/2025 — 12/2025</div>
+               <a href="https://schwarz-digits.de/" target="_blank" class="company-link">
+               <span class="company-link">Working Student, SAP HR Core Solution Development • Schwarz Digits</span>
+               <span class="arrow">→</span>
+               </a>
+               <h3>H4S4 Core Transformation & Technical Development</h3>
+               <p><em>The Challenge:</em> As part of the H4S4 project, the HR core required a stable transition to S/4HANA. The team faced the dual pressure of resolving complex 3rd-level support issues and executing system harmonization to ensure custom code remained compatible with the new S/4HANA environment during the migration.</p>
+               <p><em>My Approach:</em> I balanced active development with system maintenance and technical governance. I implemented SAP Notes to address system gaps, developed and unit-tested ABAP programs, and performed retrofit activities to align legacy processes with the target architecture. I also led system cleanup efforts and documented technical solutions on Confluence to ensure knowledge continuity across the project team.</p>
+               <p><em>The Impact:</em> My contributions improved system reliability and reduced technical friction during the migration. By streamlining code retrofits and providing robust 3rd-level support, I ensured project milestones were met on schedule. Furthermore, the technical documentation I established improved team knowledge sharing, significantly accelerating the troubleshooting process for complex HR core issues.</p>
+               <div class="tag-container">
+                  <span class="static-tag">SAP ABAP</span>
+                  <span class="static-tag">SAP S/4HANA</span>
+                  <span class="static-tag">SAP HCM</span>
+                  <span class="static-tag">ServiceNow</span>
+                  <span class="static-tag">Confluence</span>
+               </div>
+            </div>
+         </div>
+      </div>
       <!-- Bosch Group -->
       <div id="bosch" class="tab-content active">
          <!-- Project 6 -->
@@ -35,7 +80,7 @@ title: All Projects
                <div class="tag-container">
                   <span class="static-tag">SAP AIF</span>
                   <span class="static-tag">SAP S/4HANA</span>
-                  <span class="static-tag">Documentation</span>
+                  <span class="static-tag">Confluence</span>
                </div>
             </div>
          </div>
