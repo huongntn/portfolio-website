@@ -24,6 +24,7 @@ header { background-color: var(--menu-sand); border-bottom: 1px solid var(--text
 .nav-links a { font-family: var(--font-headers); color: var(--text-main); text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; margin-left: 1.75rem; transition: color 0.15s; }
 .nav-links a:hover { color: var(--brand-orange); }
 .burger-menu { display: none; }
+#menu-icon { width: 30px; text-align: center; font-size: 24px; }
 
 /* Hero Section */
 .hero-container { display: flex; flex-direction: column; align-items: center; padding: 6rem 0; }
@@ -107,9 +108,10 @@ footer { background-color: var(--text-main); color: var(--white); padding: 4rem 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   /* Hide the desktop nav links */
-  .nav-wrapper { flex-direction: row !important; justify-content: space-between !important; }
+  .nav-wrapper { flex-direction: row !important; gap: 0 !important; }
   .nav-links { display: none; flex-direction: column; position: absolute; top: 60px; right: 20px; width: auto; background: var(--menu-sand); padding: 20px; text-align: right; align-items: flex-end; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
   .nav-links.active { display: flex; }
+  .nav-links a { margin-left: 0 !important; padding: 10px 0; display: block; }
   .burger-menu { display: block; font-size: 30px; cursor: pointer; }
 
   section { padding: 1.5rem 0; }
