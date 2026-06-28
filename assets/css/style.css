@@ -56,7 +56,7 @@ hr { border: none; border-top: 1px solid var(--text-main); margin: 0; }
 .impact { display: block; margin-top: 0.8rem; font-weight: 600; }
 .project-date { font-family: var(--font-headers); font-size: 0.8rem; color: var(--text-light); min-width: 140px; font-weight: 700; }
 
-.archive-link { display: inline-flex; align-items: center; font-family: var(--font-headers); font-weight: 700; text-transform: uppercase; font-size: 0.9rem; color: var(--text-main); text-decoration: none; margin-top: 1rem; transition: color 0.2s ease }
+.archive-link { display: inline-flex; align-items: center; font-family: var(--font-headers); font-weight: 700; text-transform: uppercase; font-size: 0.9rem; color: var(--text-main); text-decoration: none; margin-left: 0.5rem; margin-top: 1rem; transition: all 0.2s ease }
 .archive-link:hover { color: var(--brand-orange); }
 .archive-link .arrow { margin-left: 0.5rem; transition: transform 0.2s ease; }
 .archive-link:hover .arrow { transform: translateX(5px); }
@@ -93,4 +93,5 @@ footer { background-color: var(--text-main); color: var(--white); padding: 4rem 
   footer .container > div { flex-direction: column !important; text-align: center; gap: 1.5rem; }
   .project-card { flex-direction: column; gap: 0.5rem !important; padding: 0.5rem !important; }
   .project-date { min-width: 100%; }
+  .archive-link { justify-content: center; margin-left: 0; padding: 1rem; }
 }
