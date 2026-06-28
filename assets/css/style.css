@@ -75,7 +75,7 @@ hr { border: none; border-top: 1px solid var(--text-main); margin: 0; }
 .project-content h3 { font-family: var(--font-headers); font-size: 1.4rem; margin: 0.5rem 0; color: var(--brand-orange); min-width: 0; }
 .company-link { display: inline-flex; align-items: center; text-decoration: none; color: var(--text-light); font-weight: 700; font-size: 1rem; transition: color 0.2s ease; margin-bottom: 0.5rem; }
 .company-link:hover { color: var(--brand-orange); }
-.company-link .arrow { margin-left: 0.5rem; margin-top: -2px; transition: transform 0.2s ease; display: inline-block; }
+.company-link .arrow { margin-left: 0.5rem; margin-top: -3px; transition: transform 0.2s ease; display: inline-block; }
 .company-link:hover .arrow { transform: translateX(5px); }
 .atingi-link { color: inherit; font-weight: bold; text-decoration: none; transition: color 0.2s ease; }
 .atingi-link:hover { color: var(--brand-orange); }
