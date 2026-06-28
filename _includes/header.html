@@ -4,7 +4,7 @@
       <img src="{{ 'assets/photos/favicon.svg' | relative_url }}" alt="logo" style="height: 40px; width: auto;">
     </a>
     
-    <div class="burger-menu" onclick="toggleMenu()">
+    <div class="burger-menu" onclick="toggleMenu()" id="menu-icon">
       ☰
     </div>
     
@@ -20,7 +20,16 @@
 
 <script>
   function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active');
+  const navLinks = document.querySelector('.nav-links');
+  const menuIcon = document.getElementById('menu-icon');
+  
+  navLinks.classList.toggle('active');
+  
+  // Toggle icon between ☰ and ✕
+  if (navLinks.classList.contains('active')) {
+    menuIcon.innerHTML = '✕';
+  } else {
+    menuIcon.innerHTML = '☰';
   }
+}
 </script>
