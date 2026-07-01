@@ -108,6 +108,13 @@ hr { border: none; border-top: 1px solid var(--text-main); margin: 0; padding: 0
 .tab-content { display: none; flex-direction: column; gap: 2rem; }
 .tab-content.active { display: flex; }
 
+/* Research page */
+.research-list { display: flex; flex-direction: column; gap: 30px; max-width: 800px; margin: 0 auto; }
+.research-card { display: flex; flex-direction: column; border-bottom: 1px solid #ddd; padding-bottom: 20px; }
+.research-card img { max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 15px; }
+.card-content h3 { margin: 0 0 10px 0; color: #333; }
+.card-content a { text-decoration: none; color: #551a8b; font-weight: bold; }
+
 /* Footer */
 footer { background-color: var(--text-main); color: var(--white); padding: 0; margin-top: 3rem; height: 60px; }
 .footer-wrapper { display: flex; justify-content: space-between; align-items: center; height: 100%; }
