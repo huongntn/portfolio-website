@@ -4,7 +4,7 @@ title: "Tan Trieu: The Vital Pulse of the Urban-Rural Partnership"
 image: /assets/images/SUD_Re01_IMG05.jpg
 description: "This study offers an immersive analysis of Tan Trieu village, exploring the delicate balance between traditional pomelo cultivation and the pressures of modern urban expansion. By examining the village’s formalized supply chain, from orchard-based harvesting to value-added product integration, we reveal how Tan Trieu functions as a vital economic partner to nearby urban centers. Beyond logistics, this research highlights the symbiotic relationship between rural heritage and urban demand, providing a sustainable model for ecotourism, resource exchange, and ecological preservation that challenges the conventional narrative of urban sprawl."
 ---
-Just 40 kilometers from the bustling streets of Ho Chi Minh City lies Tan Trieu, a village where the rhythm of life is set not by traffic, but by the harvest of its iconic pomelo orchards. While the sweet, fragrant fruit is the product, the real story of Tan Trieu is one of an essential **urban-rural partnership**—a symbiotic relationship that bridges the gap between massive consumer demand and traditional agricultural mastery.
+Just 40 kilometers from the bustling streets of Ho Chi Minh City lies Tan Trieu, a village where the rhythm of life is set not by traffic, but by the harvest of its iconic pomelo orchards. While the sweet, fragrant fruit is the product, the real story of Tan Trieu is one of an essential **urban-rural partnership**, a symbiotic relationship that bridges the gap between massive consumer demand and traditional agricultural mastery.
 
 <img src="{{ '/assets/images/SUD_Re01_IMG01.png' | relative_url }}" 
      alt="Location and Regional Connectivity of Tan Trieu" 
