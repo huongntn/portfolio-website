@@ -44,7 +44,7 @@ Tan Trieu demonstrates that urban-rural partnerships are the antidote to the "ur
 The future of this partnership depends on how well we manage the supply chain and tourism infrastructure. If we treat the village as a partner rather than just a resource, we preserve a cultural gem while providing a modern city with the essential connection to nature it requires to remain vibrant and sustainable.
 
 <img src="{{ '/assets/images/SUD_Re01_IMG04.png' | relative_url }}" 
-     alt="Location and Regional Connectivity of Tan Trieu" 
+     alt="Products at Tan Trieu" 
      class="about-img-rect" 
      style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
 
