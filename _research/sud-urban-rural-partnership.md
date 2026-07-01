@@ -19,7 +19,7 @@ Just 40 kilometers from the bustling streets of Ho Chi Minh City lies Tan Trieu,
 In the context of a sprawling urban center, the supply chain is far more than logistics; it is the bridge that maintains the vitality of rural heritage.
 
 *   **Market Access:** The proximity to the urban area provides Tan Trieu with a massive, high-demand customer base, allowing small-scale orchard owners to scale their operations beyond local subsistence.
-*   **Efficiency through Structure:** By formalizing the supply chain—from orchard to wholesale markets to urban tables—the village ensures that the fruit maintains its quality and brand integrity, which is essential for competing in a modern economy.
+*   **Efficiency through Structure:** By formalizing the supply chain, from orchard to wholesale markets to urban tables, the village ensures that the fruit maintains its quality and brand integrity, which is essential for competing in a modern economy.
 *   **Economic Stability:** A robust supply chain acts as a buffer. By integrating value-added products (like pomelo wine and medicinal goods) into the urban retail network, farmers insulate themselves against the seasonal price fluctuations of raw produce.
 
 <img src="{{ '/assets/images/SUD_Re01_IMG03.png' | relative_url }}" 
