@@ -5,6 +5,11 @@ theme: null
 permalink: pretty
 markdown: kramdown
 
+collections:
+  research:
+    output: true
+    permalink: /insights/:path/
+
 exclude:
   - Gemfile
   - Gemfile.lock
