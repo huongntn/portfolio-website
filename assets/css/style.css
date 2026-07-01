@@ -109,11 +109,12 @@ hr { border: none; border-top: 1px solid var(--text-main); margin: 0; padding: 0
 .tab-content.active { display: flex; }
 
 /* Research page */
-.research-list { display: flex; flex-direction: column; gap: 20px; max-width: 960px; margin: 0 auto; }
+.research-list { display: flex; flex-direction: column; gap: 20px; max-width: 960px; margin: 3rem auto; }
 .research-card { display: flex; align-items: center; gap: 20px; padding: 1.5rem; background: #f3f2ef; border-radius: 8px; border: 1px solid #e0e0e0; transition: all 0.2s ease; text-decoration: none; }
 .research-card:hover { background: #edece9; border-color: #d1d0ce; }
 .research-card:hover h3 { color: var(--brand-orange); }
-.research-card img { max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 15px; }
+.card-image { flex: 0 0 250px; }
+.card-image img { width: 100%; height: auto; border-radius: 4px; display: block; }
 .card-content { flex: 1; }
 .card-content h3 { margin: 0 0 0.5rem 0; color: var(--text-main); font-family: var(--font-family); font-weight: 800; text-transform: uppercase; transition: color 0.2s ease; }
 .card-content p { margin: 0; color: var(--text-light); font-size: 1rem; }
