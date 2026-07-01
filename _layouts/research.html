@@ -20,6 +20,14 @@ layout: default
       {{ content }}
     </div>
 
+    <div class="paper-link-container">
+      {% if page.full_paper_url %}
+        <a href="{{ page.full_paper_url }}" class="archive-link" target="_blank" rel="noopener noreferrer">
+          Read the full paper <span class="arrow">→</span>
+        </a>
+      {% endif %}
+    </div>
+
     <hr> 
   </article>
 </div>
