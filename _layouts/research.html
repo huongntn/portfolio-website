@@ -22,12 +22,12 @@ layout: default
 
     <hr> 
 
-    <div class="footer-navigation">
-      {% if page.full_paper_url %}
-        <a href="{{ page.full_paper_url }}" class="archive_link" target="_blank" rel="noopener noreferrer">
+    {% if page.full_paper_url %}
+      <div class="footer-navigation">
+        <a href="{{ page.full_paper_url }}" class="archive-link" target="_blank" rel="noopener noreferrer">
           Read the full paper <span class="arrow">→</span>
         </a>
-      {% endif %}
-    </div>
+      </div>
+    {% endif %}
   </article>
 </div>
