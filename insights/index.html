@@ -11,8 +11,10 @@ title: All Research
 <div class="research-list">
   {% for item in site.research %}
     <div class="research-card">
-      <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
-      <div class="content">
+      <div class="card-image">
+        <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
+      </div>
+      <div class="card-content">
         <h3><a href="{{ item.url | relative_url }}">{{ item.title }} ↗</a></h3>
         <p>{{ item.description }}</p>
       </div>
