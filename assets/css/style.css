@@ -129,6 +129,8 @@ footer { background-color: var(--text-main); color: var(--white); padding: 0; ma
 .copyright { font-size: 0.8rem; color: var(--text-light); }
 .legal-nav a { color: var(--white); text-decoration: none; font-family: var(--font-family); font-size: 0.8rem; text-transform: uppercase; margin-left: 1.5rem; }
 .legal-nav a:hover { color: var(--brand-orange); }
+.footer-navigation { margin: 2rem 0; }
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
