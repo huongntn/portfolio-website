@@ -120,6 +120,8 @@ hr { border: none; border-top: 1px solid var(--text-main); margin: 0; padding: 0
 .card-content p { margin: 0; color: var(--text-light); font-size: 1rem; }
 .card-image { flex: 0 0 250px; }
 .card-image img { width: 100%; height: auto; border-radius: 4px; display: block; }
+.article-meta { margin-top: 1rem; color: var(--text-light); font-size: 0.95rem; font-family: var(--font-family); font-weight: 500; }
+.article-meta span { display: inline-block; }
 
 /* Footer */
 footer { background-color: var(--text-main); color: var(--white); padding: 0; margin-top: 3rem; height: 60px; }
