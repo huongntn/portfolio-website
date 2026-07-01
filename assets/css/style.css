@@ -171,4 +171,9 @@ footer { background-color: var(--text-main); color: var(--white); padding: 0; ma
   .tab-list { display: flex; overflow-x: auto; border-left: none; border-bottom: 2px solid #e0e0e0; margin-bottom: 1rem; }
   .tab-button { white-space: nowrap; border-left: none; border-bottom: 2px solid transparent; }
   .tab-button.active { border-left: none; border-bottom: 2px solid var(--brand-orange, #f37021); }
+
+  .research-card { flex-direction: column; align-items: flex-start; gap: 1rem; padding: 1rem; }
+  .card-image { flex: 0 0 100%; width: 100%; }
+  .card-content h3 { font-size: 1.2rem; }
+  .card-content p { font-size: 0.95rem; line-height: 1.5; }
 }
