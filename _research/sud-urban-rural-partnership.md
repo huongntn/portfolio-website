@@ -5,7 +5,7 @@ date: 2018-07-13
 authors: "Chau Ky Bao, Thi Ngoc Huong Nguyen, Thi Hoang Ly Cao, Minh Thanh Pham, Hoa Thuan Tran"
 full_paper_url: https://www.researchgate.net/publication/326668114_Pomelo_Supply_Chain_Ecotourism_in_Tan_Trieu_Pomelo_Village
 image: /assets/images/SUD_Re01_IMG05.jpg
-description: "This study explores the balance between traditional pomelo cultivation in Tan Trieu and modern urban expansion. By analyzing the village’s supply chain and value-added products, we reveal Tan Trieu's role as a vital economic partner to nearby urban centers. Beyond logistics, this research highlights a symbiotic relationship that offers a sustainable model for ecotourism and ecological preservation, challenging the conventional narrative of urban sprawl."
+description: "This study analyzes the balance between traditional pomelo farming in Tan Trieu and urban expansion. By examining supply chains and value-added products, we reveal the village's role as a vital economic partner to urban centers, offering a sustainable model for ecotourism that challenges the conventional narrative of urban sprawl."
 ---
 Just 40 kilometers from the bustling streets of Ho Chi Minh City lies Tan Trieu, a village where the rhythm of life is set not by traffic, but by the harvest of its iconic pomelo orchards. While the sweet, fragrant fruit is the product, the real story of Tan Trieu is one of an essential **urban-rural partnership**, a symbiotic relationship that bridges the gap between massive consumer demand and traditional agricultural mastery.
 
