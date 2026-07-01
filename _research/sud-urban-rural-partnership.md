@@ -16,11 +16,7 @@ Just 40 kilometers from the bustling streets of Ho Chi Minh City lies Tan Trieu,
 
 ### Why the Supply Chain is the Lifeline
 
-In the context of a sprawling urban center, the supply chain is far more than logistics; it is the bridge that maintains the vitality of rural heritage.
-
-*   **Market Access:** The proximity to the urban area provides Tan Trieu with a massive, high-demand customer base, allowing small-scale orchard owners to scale their operations beyond local subsistence.
-*   **Efficiency through Structure:** By formalizing the supply chain, from orchard to wholesale markets to urban tables, the village ensures that the fruit maintains its quality and brand integrity, which is essential for competing in a modern economy.
-*   **Economic Stability:** A robust supply chain acts as a buffer. By integrating value-added products (like pomelo wine and medicinal goods) into the urban retail network, farmers insulate themselves against the seasonal price fluctuations of raw produce.
+In the context of a sprawling urban center, the supply chain is far more than logistics; it is the bridge that maintains the vitality of rural heritage. **Market access** allows the proximity of the urban area to provide Tan Trieu with a massive, high-demand customer base, enabling small-scale orchard owners to scale their operations beyond local subsistence. Furthermore, through the **efficiency of structure**, the village formalizes the supply chain from orchard to wholesale markets and finally to urban tables, ensuring that the fruit maintains the quality and brand integrity essential for competing in a modern economy. Finally, a robust supply chain provides **economic stability** as a buffer; by integrating value-added products like pomelo wine and medicinal goods into the urban retail network, farmers insulate themselves against the seasonal price fluctuations of raw produce.
 
 <img src="{{ '/assets/images/SUD_Re01_IMG03.png' | relative_url }}" 
      alt="Location and Regional Connectivity of Tan Trieu" 
@@ -29,11 +25,7 @@ In the context of a sprawling urban center, the supply chain is far more than lo
 
 ### The Urban-Rural Partnership: Lessons for the Future
 
-The relationship between Tan Trieu and the neighboring urban landscape offers a blueprint for sustainable development. When rural areas and cities function as partners rather than separate entities, the benefits are clear:
-
-*   **Sustainable Consumption & Ecotourism:** The city provides the demand for "green" experiences, which creates the economic incentive for the village to protect its environment rather than convert land for industrial use.
-*   **Knowledge and Resource Exchange:** This partnership facilitates a flow of information. The urban market brings higher standards for branding and consumer experience, while the rural side provides the "authentic" identity and ecological services that urban dwellers desperately seek.
-*   **Mutual Resilience:** As urban centers grow, they require the ecological health and food security that rural partners provide. In turn, rural villages like Tan Trieu require the infrastructure and investment that urban connectivity enables.
+The relationship between Tan Trieu and the neighboring urban landscape offers a blueprint for sustainable development, proving that the benefits are clear when rural areas and cities function as partners rather than separate entities. This includes **sustainable consumption** and **ecotourism**, where the city provides demand for “green” experiences, creating the economic incentive for the village to protect its environment rather than convert land for industrial use. Additionally, the partnership facilitates a **knowledge and resource exchange**, where the urban market brings higher standards for branding and consumer experience, while the rural side provides the authentic identity and ecological services that urban dwellers seek. Through **mutual resilience**, as urban centers grow and require the ecological health and food security that rural partners provide, rural villages like Tan Trieu simultaneously require the infrastructure and investment that urban connectivity enables.
 
 <img src="{{ '/assets/images/SUD_Re01_IMG02.png' | relative_url }}" 
      alt="Location and Regional Connectivity of Tan Trieu" 
