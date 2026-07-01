@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Tan Trieu Pomelo Study"
-image: /assets/images/SUD_Re01_IMG05.png
+image: /assets/images/SUD_Re01_IMG05.jpg
 description: "A deep dive into the supply chain and urban-rural partnership of Tan Trieu village."
 ---
 ## Tan Trieu: The Vital Pulse of the Urban-Rural Connection
