@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: research
 title: "Tan Trieu: The Vital Pulse of the Urban-Rural Partnership"
 image: /assets/images/SUD_Re01_IMG05.jpg
 description: "This study offers an immersive analysis of Tan Trieu village, exploring the delicate balance between traditional pomelo cultivation and the pressures of modern urban expansion. By examining the village’s formalized supply chain, from orchard-based harvesting to value-added product integration, we reveal how Tan Trieu functions as a vital economic partner to nearby urban centers. Beyond logistics, this research highlights the symbiotic relationship between rural heritage and urban demand, providing a sustainable model for ecotourism, resource exchange, and ecological preservation that challenges the conventional narrative of urban sprawl."
