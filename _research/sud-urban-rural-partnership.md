@@ -1,6 +1,6 @@
 ---
 layout: research
-title: "Tan Trieu: The Vital Pulse of the Urban-Rural Partnership"
+title: "Beyond the Orchard: How the Pomelo Binds Urban and Rural"
 date: 2018-07-13
 authors: "Chau Ky Bao, Thi Ngoc Huong Nguyen, Thi Hoang Ly Cao, Minh Thanh Pham, Hoa Thuan Tran"
 full_paper_url: https://www.researchgate.net/publication/326668114_Pomelo_Supply_Chain_Ecotourism_in_Tan_Trieu_Pomelo_Village
