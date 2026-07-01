@@ -8,6 +8,13 @@ layout: default
     </div>
     
     <hr> 
+
+    <div class="article-meta">
+    <p>
+      <span class="date">{{ page.date | date: "%B %d, %Y" }}</span> 
+      {% if page.authors %} • <span>{{ page.authors }}</span>{% endif %}
+    </p>
+    </div>
     
     <div class="content">
       {{ content }}
