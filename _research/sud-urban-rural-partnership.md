@@ -2,7 +2,7 @@
 layout: research
 title: "Beyond the Orchard: How the Pomelo Binds Urban and Rural"
 date: 2018-07-13
-authors: "Chau Ky Bao, Thi Ngoc Huong Nguyen, Thi Hoang Ly Cao, Minh Thanh Pham, Hoa Thuan Tran"
+authors: "Bao Chau Ky, Thi Ngoc Huong Nguyen, Thi Hoang Ly Cao, Minh Thanh Pham, Hoa Thuan Tran"
 full_paper_url: https://www.researchgate.net/publication/326668114_Pomelo_Supply_Chain_Ecotourism_in_Tan_Trieu_Pomelo_Village
 image: /assets/images/SUD_Re01_IMG05.jpg
 description: "This study analyzes the balance between traditional pomelo farming in Tan Trieu and urban expansion. By examining supply chains and value-added products, we reveal the village's role as a vital economic partner to urban centers, offering a sustainable model for ecotourism that challenges the conventional narrative of urban sprawl."
