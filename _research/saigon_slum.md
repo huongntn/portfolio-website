@@ -3,6 +3,7 @@ layout: research
 title: "Side by Side, Worlds Apart: The Invisible Lives behind Saigon’s Shine"
 date: 2018-01-14
 authors: "Thi Ngoc Huong Nguyen, Hong Nguyen Khang Dang, Tuan Nam Pham, Minh Thanh Pham"
+full_paper_url: https://www.researchgate.net/publication/408384701_Residential_Areas_in_Tan_Tao_A_Binh_Tan_District_under_impacts_of_Tan_Tao_Industrial_Park
 image: /assets/images/SUD_Re03_IMG07.png
 description: "Saigon is a city of two worlds. This piece examines the stark reality of the Tan Tao slums, advocating for a shift from indifference to inclusion. An exploration of the human cost behind Saigon’s rapid growth, revealing the invisible lives of the industrial workers who keep our city breathing."
 ---
