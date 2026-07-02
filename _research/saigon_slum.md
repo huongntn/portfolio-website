@@ -3,7 +3,7 @@ layout: research
 title: "Side by Side, Worlds Apart: The Invisible Lives behind Saigon’s Shine"
 date: 2018-01-14
 authors: "Thi Ngoc Huong Nguyen, Hong Nguyen Khang Dang, Tuan Nam Pham, Minh Thanh Pham"
-image: /assets/images/SUD_Re03_IMG07.jpg
+image: /assets/images/SUD_Re03_IMG07.png
 description: "Saigon is a city of two worlds. This piece examines the stark reality of the Tan Tao slums, advocating for a shift from indifference to inclusion. An exploration of the human cost behind Saigon’s rapid growth, revealing the invisible lives of the industrial workers who keep our city breathing."
 ---
 In the collective imagination, Saigon is defined by its bustling city center, iconic skylines, and the rapid pace of a modernizing economy. Yet, just beyond the gleaming facades lies another reality, a fragmented landscape where the people who fuel our city’s industries reside in the shadows. My research into the Tan Tao A slum in Binh Tan District, situated right beside the Tan Tao Industrial Park, revealed a stark dichotomy that challenges our understanding of urban progress.
