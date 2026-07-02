@@ -55,7 +55,7 @@ There is also a visible effort toward harmonized architecture, where new buildin
 
 ### The Emotional Landscape
 
-The feelings of Saigon are perhaps best understood in the quiet transitions—the shift from a bustling, sun-drenched intersection into the cool, shadowed sanctuary of a narrow alleyway. There is a specific, bittersweet comfort in knowing these spaces so intimately. To me, Saigon is not just a collection of coordinates; it is a tapestry of moments, smells, and sounds. It is the feeling of the humid air on my skin, the constant hum of life, and the knowledge that no matter how far I go, half of my heart remains anchored in these streets.
+The feelings of Saigon are perhaps best understood in the quiet transitions, the shift from a bustling, sun-drenched intersection into the cool, shadowed sanctuary of a narrow alleyway. There is a specific, bittersweet comfort in knowing these spaces so intimately. To me, Saigon is not just a collection of coordinates; it is a tapestry of moments, smells, and sounds. It is the feeling of the humid air on my skin, the constant hum of life, and the knowledge that no matter how far I go, half of my heart remains anchored in these streets.
 
 ### The Contemporary Commercial Surge
 
