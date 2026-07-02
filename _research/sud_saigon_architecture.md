@@ -3,6 +3,7 @@ layout: research
 title: "Saigon: Forms, Faces, and Feelings"
 date: 2018-05-29
 authors: "Thi Ngoc Huong Nguyen, Hong Nguyen Khang Dang, Tuan Nam Pham"
+full_paper_url: https://www.researchgate.net/publication/408351774_Architectural_characteristics_of_historical_villa_zone_in_District_3_HCMC_-_Actual_situation_and_proposed_solutions
 image: /assets/images/SUD_Re02_IMG09.JPG
 description: "An architectural journey through my hometown, where historic legacies, evolving urban textures, and the vibrant spirit of the people collide to define a city in constant transformation."
 ---
