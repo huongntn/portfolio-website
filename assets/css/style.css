@@ -117,7 +117,7 @@ hr { border: none; border-top: 1px solid var(--text-main); margin: 0; padding: 0
 .card-image img { width: 100%; height: auto; border-radius: 4px; display: block; }
 .card-content { flex: 1; }
 .card-content h3 { margin: 0 0 0.5rem 0; color: var(--text-main); font-family: var(--font-family); font-weight: 800; text-transform: uppercase; transition: color 0.2s ease; }
-.card-content p { margin: 0; color: var(--text-light); font-size: 1rem; }
+.card-content p { margin: 0; color: var(--text-main); font-size: 1rem; }
 .card-image { flex: 0 0 250px; }
 .card-image img { width: 100%; height: auto; border-radius: 4px; display: block; }
 .article-meta { margin-top: 1rem; color: var(--text-light); font-size: 0.95rem; font-family: var(--font-family); font-weight: 500; }
