@@ -107,6 +107,7 @@ hr { border: none; border-top: 1px solid var(--text-main); margin: 0; padding: 0
 /* Content area */
 .tab-content { display: none; flex-direction: column; gap: 2rem; }
 .tab-content.active { display: flex; }
+.tab-content p { font-size: 1rem; line-height: 1.6; }
 
 /* Research page */
 .research-list { display: flex; flex-direction: column; gap: 20px; max-width: 960px; margin: 3rem auto; }
@@ -175,5 +176,5 @@ footer { background-color: var(--text-main); color: var(--white); padding: 0; ma
   .research-card { flex-direction: column; align-items: flex-start; gap: 1rem; padding: 1rem; }
   .card-image { flex: 0 0 100%; width: 100%; }
   .card-content h3 { font-size: 1.2rem; }
-  .card-content p { font-size: 0.95rem; line-height: 1.5; }
+  .card-content p, .tab-content p { font-size: 0.95rem; line-height: 1.5; }
 }
