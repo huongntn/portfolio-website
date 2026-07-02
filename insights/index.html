@@ -7,7 +7,9 @@ title: All Research
       <h1>All Research</h1>
    </div>
 </div>
+
 <hr>
+
 <div class="research-list">
   {% for item in site.research %}
     <a href="{{ item.url | relative_url }}" class="research-card">
@@ -21,3 +23,6 @@ title: All Research
     </a>
   {% endfor %}
 </div>
+
+<hr style="margin-top: 3rem; margin-bottom: 2rem;">
+<a href="/" class="back-home"><span class="arrow-left">←</span> Back to Home</a>
