@@ -11,20 +11,20 @@ title: All Research
 <hr>
 
 <div class="research-list">
-  {% for item in site.research %}
-    {{ item.url | relative_url }}
+{% for item in site.research %}
+<a href.url | relative_url }}
+      
+   <div class="category-cover">
+      <span>{{ item.category }}</span>
+   </div>
 
-      <div class="category-cover">
-        <span>{{ item.category }}</span>
-      </div>
+   <div class="card-content">
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+   </div>
 
-      <div class="card-content">
-        <h3>{{ item.title }}</h3>
-        <p>{{ item.description }}</p>
-      </div>
-
-    </a>
-  {% endfor %}
+</a>
+{% endfor %}
 </div>
 
 <hr style="margin-top: 3rem; margin-bottom: 2rem;">
