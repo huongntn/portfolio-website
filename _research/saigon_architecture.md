@@ -2,9 +2,9 @@
 layout: research
 title: "Saigon: Forms, Faces, and Feelings"
 date: 2018-05-29
+category: Urban Planning
 authors: "Thi Ngoc Huong Nguyen, Hong Nguyen Khang Dang, Tuan Nam Pham"
 full_paper_url: https://www.researchgate.net/publication/408351774_Architectural_characteristics_of_historical_villa_zone_in_District_3_HCMC_-_Actual_situation_and_proposed_solutions
-image: /assets/images/SUD_Re02_IMG09.JPG
 description: "An architectural journey through my hometown, where historic legacies, evolving urban textures, and the vibrant spirit of the people collide to define a city in constant transformation."
 ---
 As Rick Blaine famously says in Casablanca, "We'll always have Paris.", it is a poignant reminder of the places that remain etched in our souls, and for me, that place is Saigon. Often remembered in history as the "Paris of the Orient", the city bears a legacy of beauty that has evolved far beyond its colonial moniker. Today, Saigon is a city defined by the relentless tension between its past and its future, and while its skyline changes, my connection to it remains constant, no matter where life takes me, **I'll always have Saigon**.
