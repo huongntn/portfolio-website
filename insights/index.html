@@ -14,9 +14,7 @@ title: All Research
 <div class="research-list">
 {% for item in site.research %}
 
-<a href.url | relative_url }}
-
-   <div class="category-cover">
+<a href="{{ item.url | relative_url }}" class=category-cover">
       <span>{{ item.category }}</span>
    </div>
 
