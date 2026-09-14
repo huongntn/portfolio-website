@@ -113,13 +113,15 @@ hr { border: none; border-top: 1px solid var(--text-main); margin: 0; padding: 0
 .research-card { display: flex; align-items: center; gap: 20px; padding: 1.5rem; background: #f3f2ef; border-radius: 8px; border: 1px solid #e0e0e0; transition: all 0.2s ease; text-decoration: none; }
 .research-card:hover { background: #edece9; border-color: #d1d0ce; }
 .research-card:hover h3 { color: var(--brand-orange); }
-.card-image { flex: 0 0 250px; }
-.card-image img { width: 100%; height: auto; border-radius: 4px; display: block; }
+.research-card:hover .category-cover { background: #ffffff; }
+.research-card:hover .category-cover span { color: var(--brand-orange); }
+.category-cover { position: relative; width: 300px; min-width: 300px; height: 200px; display: flex; justify-content: center; align-items: center; background: #fcfcfc; }
+.category-cover::before { content: ""; position: absolute; top: 25px; right: 25px; width: 100px; height: 100px; border-top: 14px solid #ef7d16; border-right: 14px solid #ef7d16; }
+.category-cover::after { content: ""; position: absolute; bottom: 25px; left: 25px; width: 100px; height: 100px; border-bottom: 14px solid #ef7d16; border-left: 14px solid #ef7d16; }
+.category-cover span { font-size: 1.5rem; font-weight: 800; letter-spacing: 4px; text-transform: uppercase; text-align: center; line-height: 1.2; padding: 0 20px; z-index: 1; }
 .card-content { flex: 1; }
 .card-content h3 { margin: 0 0 0.5rem 0; color: var(--text-main); font-family: var(--font-family); font-weight: 800; text-transform: uppercase; transition: color 0.2s ease; }
 .card-content p { margin: 0; color: var(--text-main); font-size: 1rem; }
-.card-image { flex: 0 0 250px; }
-.card-image img { width: 100%; height: auto; border-radius: 4px; display: block; }
 .article-meta { margin-top: 1rem; color: var(--text-light); font-size: 0.95rem; font-family: var(--font-family); font-weight: 500; }
 .article-meta span { display: inline-block; }
 
@@ -173,7 +175,7 @@ footer { background-color: var(--text-main); color: var(--white); padding: 0; ma
   .tab-button.active { border-left: none; border-bottom: 2px solid var(--brand-orange, #f37021); }
 
   .research-card { flex-direction: column; align-items: flex-start; gap: 1rem; padding: 1rem; }
-  .card-image { flex: 0 0 100%; width: 100%; }
+  .category-cover { width: 100%; min-width: auto; }
   .card-content h3 { font-size: 1.2rem; }
   .card-content p, .tab-content p { font-size: 0.95rem; line-height: 1.5; }
 }
