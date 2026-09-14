@@ -13,7 +13,7 @@ title: All Research
 
 <div class="research-list">
   {% for item in site.research %}
-    {{ item.url | relative_url }}
+    <a href="{{ item.url | relative_url }}" class="research-card">
       <div class="category-cover">
         <span>{{ item.category }}</span>
       </div>
@@ -28,7 +28,7 @@ title: All Research
 
 <hr style="margin-top: 3rem; margin-bottom: 2rem;">
 
-{{ '/' | relative_url }}
+<a href="{{ '/' | relative_url }}" class="back-link">
   <span class="arrow-left">←</span>
   Back to Home
 </a>
