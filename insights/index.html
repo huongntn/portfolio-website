@@ -14,7 +14,7 @@ title: All Research
   {% for item in site.research %}
     <a href="{{ item.url | relative_url }}" class="research-card">
       <div class="card-image">
-        <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
+        <img src="{{ item.category }}" alt="{{ item.title }}">
       </div>
       <div class="card-content">
         <h3>{{ item.title }}</h3>
