@@ -14,14 +14,16 @@ title: All Research
 <div class="research-list">
 {% for item in site.research %}
 
-<a href="{{ item.url | relative_url }}" class=category-cover">
-      <span>{{ item.category }}</span>
-   </div>
+<a href="{{ | relative_url }}
 
-   <div class="card-content">
-      <h3>{{ item.title }}</h3>
-      <p>{{ item.description }}</p>
-   </div>
+    <div class="category-cover">
+        <span>{{ item.category }}</span>
+    </div>
+
+    <div class="card-content">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+    </div>
 
 </a>
 
@@ -30,6 +32,6 @@ title: All Research
 
 <hr style="margin-top: 3rem; margin-bottom: 2rem;">
 
-<a href="n class="arrow-left">←</span>
+<a href="/" class"arrow-left">←</span>
    Back to Home
 </a>
