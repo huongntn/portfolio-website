@@ -4,34 +4,33 @@ title: All Research
 ---
 
 <div class="container">
-   <div class="about-header">
-      <h1>All Research</h1>
-   </div>
+  <div class="about-header">
+    <h1>All Research</h1>
+  </div>
 </div>
 
 <hr>
 
-<div class="research-card">
-{% for item in site.research %}
+<div class="research-list">
+  {% for item in site.research %}
+    {% assign research_url = item.url | relative_url %}
 
-<a href="{{ | relative_url }}
-
-    <div class="category-cover">
+    {{ research_url }}
+      <div class="category-cover">
         <span>{{ item.category }}</span>
-    </div>
+      </div>
 
-    <div class="card-content">
+      <div class="card-content">
         <h3>{{ item.title }}</h3>
         <p>{{ item.description }}</p>
-    </div>
-
-</a>
-
-{% endfor %}
+      </div>
+    </a>
+  {% endfor %}
 </div>
 
 <hr style="margin-top: 3rem; margin-bottom: 2rem;">
 
-<a href="/" class"arrow-left">←</span>
-   Back to Home
+{{ '/' | relative_url }}
+  <span class="arrow-left">←</span>
+  Back to Home
 </a>
