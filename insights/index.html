@@ -12,14 +12,17 @@ title: All Research
 
 <div class="research-list">
   {% for item in site.research %}
-    <a href="{{ item.url | relative_url }}" class="research-card">
-      <div class="card-image">
-        <img src="{{ item.category }}" alt="{{ item.title }}">
+    {{ item.url | relative_url }}
+
+      <div class="category-cover">
+        <span>{{ item.category }}</span>
       </div>
+
       <div class="card-content">
         <h3>{{ item.title }}</h3>
         <p>{{ item.description }}</p>
       </div>
+
     </a>
   {% endfor %}
 </div>
