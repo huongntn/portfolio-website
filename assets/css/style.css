@@ -110,12 +110,12 @@ hr { border: none; border-top: 1px solid var(--text-main); margin: 0; padding: 0
 
 /* Research page */
 .research-list { display: flex; flex-direction: column; gap: 20px; max-width: 960px; margin: 3rem auto; }
-.research-card { display: flex; align-items: center; gap: 20px; padding: 1.5rem; background: #f3f2ef; border-radius: 8px; border: 1px solid #e0e0e0; transition: all 0.2s ease; text-decoration: none; }
+.research-card { display: flex; align-items: center; gap: 20px; padding: 1.5rem; background: #f3f2ef; border-radius: 8px; border: 1px solid #e0e0e0; transition: all 0.2s ease; text-decoration: none; overflow: hidden; }
 .research-card:hover { background: #edece9; border-color: #d1d0ce; }
 .research-card:hover h3 { color: var(--brand-orange); }
 .research-card:hover .category-cover { background: #ffffff; }
 .research-card:hover .category-cover span { color: var(--brand-orange); }
-.category-cover { position: relative; width: 300px; min-width: 300px; height: 200px; display: flex; justify-content: center; align-items: center; background: #fcfcfc; }
+.category-cover { position: relative; width: 260px; min-width: 260px; height: 200px; display: flex; justify-content: center; align-items: center; background: #fcfcfc; }
 .category-cover::before { content: ""; position: absolute; top: 25px; right: 25px; width: 100px; height: 100px; border-top: 14px solid #ef7d16; border-right: 14px solid #ef7d16; }
 .category-cover::after { content: ""; position: absolute; bottom: 25px; left: 25px; width: 100px; height: 100px; border-bottom: 14px solid #ef7d16; border-left: 14px solid #ef7d16; }
 .category-cover span { font-size: 1.5rem; font-weight: 800; letter-spacing: 4px; text-transform: uppercase; text-align: center; line-height: 1.2; padding: 0 20px; z-index: 1; }
